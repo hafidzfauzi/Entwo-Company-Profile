@@ -11,8 +11,11 @@ export default defineConfig({
         tailwindcss(),
     ],
     server: {
-        watch: {
-            ignored: ['**/storage/framework/views/**'],
+        host: '172.22.17.92', // Samakan dengan host Laravel
+        port: 5173,
+        strictPort: true,
+        hmr: {
+            host: '172.22.17.92',
         },
     },
 });
