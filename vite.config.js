@@ -11,11 +11,11 @@ export default defineConfig({
         tailwindcss(),
     ],
     server: {
-        host: '172.22.17.92', // Samakan dengan host Laravel
+        host: '192.168.1.5', // Samakan dengan host Laravel
         port: 5173,
         strictPort: true,
         hmr: {
-            host: '172.22.17.92',
+            host: '192.168.1.5',
         },
     },
 });

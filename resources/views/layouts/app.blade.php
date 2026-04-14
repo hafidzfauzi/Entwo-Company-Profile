@@ -6,7 +6,7 @@
     <title>Entwo Company</title>
     @vite('resources/css/app.css', 'resources/js/app.js')
 </head>
-<body>
+<body class="font-sans antialiased">
     @include('components.navbar')
     <main>
         @yield('content')
