@@ -22,4 +22,70 @@
   .section-title {
     @apply text-3xl md:text-4xl font-bold text-primary text-center;
   }
+  
+  /* Tambahan: Paksa Swiper setinggi layar penuh */
+  .hero-swiper {
+    @apply w-full h-screen;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .animate-slide-in {
+    animation: slideIn 1s ease-in-out;
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+/* --- Logic Stretch Background (Swiper) --- */
+/* Taruh di sini agar me-override default style dari library Swiper */
+
+.hero-swiper .swiper-wrapper {
+  @apply h-full w-full;
+}
+
+.hero-swiper .swiper-slide {
+  @apply h-full w-full overflow-hidden;
+}
+
+.hero-swiper .swiper-slide img {
+  width: 100% !important;
+  height: 100% !important;
+  /* Gunakan object-fill agar gambar 'ditarik' paksa mengikuti 
+     lebar dan tinggi layar (efek stretch). 
+  */
+  object-fit: fill !important; 
+  display: block;
+}
+
+.swiper-pagination-bullet-active
+    --color-secondary: #38BDF8;
+/* Opsional: Di desktop tetap pakai cover biar nggak terlalu gepeng, 
+   tapi kalau kamu mau stretch di SEMUA layar, hapus @media ini. */
+@media (min-width: 768px) {
+  .hero-swiper .swiper-slide img {
+    object-fit: cover !important;
+  }
 }
