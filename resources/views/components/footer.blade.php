@@ -17,10 +17,10 @@
             <div>
                 <h4 class="text-lg font-semibold mb-6 border-b-2 border-secondary w-fit">Navigation</h4>
                 <ul class="space-y-4 text-slate-400 text-sm">
-                    <li><a href="/" class="hover:text-secondary transition-colors duration-300">Home</a></li>
-                    <li><a href="/service" class="hover:text-secondary transition-colors duration-300">Service</a></li>
-                    <li><a href="/about" class="hover:text-secondary transition-colors duration-300">About Us</a></li>
-                    <li><a href="/contact" class="hover:text-secondary transition-colors duration-300">Contact</a></li>
+                    <li><a href="#hero" class="hover:text-secondary transition-colors duration-300">Home</a></li>
+                    <li><a href="#service" class="hover:text-secondary transition-colors duration-300">Service</a></li>
+                    <li><a href="#about" class="hover:text-secondary transition-colors duration-300">About Us</a></li>
+                    <li><a href="#contact" class="hover:text-secondary transition-colors duration-300">Contact</a></li>
                 </ul>
             </div>
 

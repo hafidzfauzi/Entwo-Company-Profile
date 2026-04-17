@@ -7,11 +7,11 @@
 
         <!-- Menu Desktop -->
         <div class="hidden md:flex space-x-8 items-center">
-            <a href="/" class="hover:text-secondary transition font-medium">Home</a>
-            <a href="/about" class="hover:text-secondary transition font-medium">About Us</a>
-            <a href="/service" class="hover:text-secondary transition font-medium">Service</a>
-            <a href="/portfolio" class="hover:text-secondary transition font-medium">Portfolio</a>
-            <a href="/contact" class="hover:text-secondary transition font-medium">Contact</a>
+            <a href="#hero" class="hover:text-secondary transition font-medium">Home</a>
+            <a href="#about" class="hover:text-secondary transition font-medium">About Us</a>
+            <a href="#service" class="hover:text-secondary transition font-medium">Service</a>
+            <a href="#portfolio" class="hover:text-secondary transition font-medium">Portfolio</a>
+            <a href="#contact" class="hover:text-secondary transition font-medium">Contact</a>
         </div>
 
         <!-- Hamburger Button -->
@@ -26,10 +26,10 @@
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-        <a href="/" class="block py-2">Home</a>
-        <a href="/about" class="block py-2">About Us</a>
-        <a href="/service" class="block py-2">Service</a>
-        <a href="/portfolio" class="block py-2">Portfolio</a>
-        <a href="/contact" class="block py-2">Contact</a>
+        <a href="#hero" class="block py-2">Home</a>
+        <a href="#about" class="block py-2">About Us</a>
+        <a href="#service" class="block py-2">Service</a>
+        <a href="#portfolio" class="block py-2">Portfolio</a>
+        <a href="#contact" class="block py-2">Contact</a>
     </div>
 </nav>
