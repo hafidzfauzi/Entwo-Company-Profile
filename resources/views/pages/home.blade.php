@@ -225,53 +225,86 @@
 
         {{-- Grid Portfolio --}}
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {{-- Project 1: PIMS OSISOFT --}}
+            <div class="group flex flex-col">
+                <div class="relative overflow-hidden rounded-2xl bg-primary aspect-[4/3] shadow-lg">
+                    <img src="{{ Vite::asset('resources/images/project1.png') }}"
+                        class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110 md:group-hover:opacity-40">
 
-            {{-- Project 1 --}}
-            <div class="group relative overflow-hidden rounded-2xl bg-primary aspect-[4/3]">
-                <img src="{{ Vite::asset('resources/images/project1.jpg') }}"
-                     class="w-full h-full object-cover transition duration-500 group-hover:scale-110 group-hover:opacity-40">
-
-                {{-- Konten yang muncul saat Hover --}}
-                <div class="absolute inset-0 p-8 flex flex-col justify-end translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                    <span class="text-secondary text-sm font-bold mb-2 uppercase tracking-widest">Automation</span>
-                    <h3 class="text-white text-2xl font-bold mb-4">Industrial System Integration</h3>
-                    <a href="#" class="text-white flex items-center space-x-2 text-sm font-semibold hover:text-secondary">
-                        <span>View Details</span>
-                        <span class="text-lg">→</span>
+                    {{-- Hover Desktop --}}
+                    <div class="hidden md:flex absolute inset-0 p-8 flex flex-col justify-end translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-gradient-to-t from-primary/90 to-transparent">
+                        <span class="text-secondary text-sm font-bold mb-2 uppercase tracking-widest">System Integrator</span>
+                        <h3 class="text-white text-2xl font-bold mb-4 uppercase">PIMS OSISOFT Optimization</h3>
+                        <a href="/portfolio" class="text-white flex items-center space-x-2 text-sm font-semibold hover:text-secondary">
+                            <span>View Details</span>
+                            <span class="text-lg">→</span>
+                        </a>
+                    </div>
+                </div>
+                {{-- Teks Mobile --}}
+                <div class="mt-4 px-2 md:hidden">
+                    <span class="text-secondary text-xs font-bold uppercase tracking-widest">System Integrator</span>
+                    <h3 class="text-primary text-lg font-bold mt-1 uppercase">PIMS OSISOFT Optimization</h3>
+                    <p class="text-slate-500 text-sm mt-2 line-clamp-2">Real-time monitoring and operational efficiency optimization for industrial systems.</p>
+                    <a href="/portfolio" class="text-primary mt-3 flex items-center space-x-2 text-sm font-bold">
+                        <span>View Project</span><span>→</span>
                     </a>
                 </div>
             </div>
 
-            {{-- Project 2 --}}
-            <div class="group relative overflow-hidden rounded-2xl bg-primary aspect-[4/3]">
-                <img src="{{ Vite::asset('resources/images/project2.jpg') }}"
-                     class="w-full h-full object-cover transition duration-500 group-hover:scale-110 group-hover:opacity-40">
+            {{-- Project 2: Online Attendance --}}
+            <div class="group flex flex-col">
+                <div class="relative overflow-hidden rounded-2xl bg-primary aspect-[4/3] shadow-lg">
+                    <img src="{{ Vite::asset('resources/images/project2.png') }}"
+                        class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110 md:group-hover:opacity-40">
 
-                <div class="absolute inset-0 p-8 flex flex-col justify-end translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                    <span class="text-secondary text-sm font-bold mb-2 uppercase tracking-widest">Construction</span>
-                    <h3 class="text-white text-2xl font-bold mb-4">General Contracting Site</h3>
-                    <a href="#" class="text-white flex items-center space-x-2 text-sm font-semibold hover:text-secondary">
-                        <span>View Details</span>
-                        <span class="text-lg">→</span>
+                    {{-- Hover Desktop --}}
+                    <div class="hidden md:flex absolute inset-0 p-8 flex flex-col justify-end translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-gradient-to-t from-primary/90 to-transparent">
+                        <span class="text-secondary text-sm font-bold mb-2 uppercase tracking-widest">Software Development</span>
+                        <h3 class="text-white text-2xl font-bold mb-4 uppercase">Online Attendance System</h3>
+                        <a href="/portfolio" class="text-white flex items-center space-x-2 text-sm font-semibold hover:text-secondary">
+                            <span>View Details</span>
+                            <span class="text-lg">→</span>
+                        </a>
+                    </div>
+                </div>
+                {{-- Teks Mobile --}}
+                <div class="mt-4 px-2 md:hidden">
+                    <span class="text-secondary text-xs font-bold uppercase tracking-widest">Software Development</span>
+                    <h3 class="text-primary text-lg font-bold mt-1 uppercase">Online Attendance System</h3>
+                    <p class="text-slate-500 text-sm mt-2 line-clamp-2">Web-based attendance solution for employees with real-time tracking and reporting.</p>
+                    <a href="/portfolio" class="text-primary mt-3 flex items-center space-x-2 text-sm font-bold">
+                        <span>View Project</span><span>→</span>
                     </a>
                 </div>
             </div>
 
-            {{-- Project 3 --}}
-            <div class="group relative overflow-hidden rounded-2xl bg-primary aspect-[4/3]">
-                <img src="{{ Vite::asset('resources/images/project3.jpg') }}"
-                     class="w-full h-full object-cover transition duration-500 group-hover:scale-110 group-hover:opacity-40">
+            {{-- Project 3: Condensor CCTV --}}
+            <div class="group flex flex-col">
+                <div class="relative overflow-hidden rounded-2xl bg-primary aspect-[4/3] shadow-lg">
+                    <img src="{{ Vite::asset('resources/images/project3.png') }}"
+                        class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110 md:group-hover:opacity-40">
 
-                <div class="absolute inset-0 p-8 flex flex-col justify-end translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                    <span class="text-secondary text-sm font-bold mb-2 uppercase tracking-widest">Maintenance</span>
-                    <h3 class="text-white text-2xl font-bold mb-4">Routine Electrical Audits</h3>
-                    <a href="#" class="text-white flex items-center space-x-2 text-sm font-semibold hover:text-secondary">
-                        <span>View Details</span>
-                        <span class="text-lg">→</span>
+                    {{-- Hover Desktop --}}
+                    <div class="hidden md:flex absolute inset-0 p-8 flex flex-col justify-end translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-gradient-to-t from-primary/90 to-transparent">
+                        <span class="text-secondary text-sm font-bold mb-2 uppercase tracking-widest">Engineering & Maintenance</span>
+                        <h3 class="text-white text-2xl font-bold mb-4 uppercase">Condensor CCTV Installation</h3>
+                        <a href="/portfolio" class="text-white flex items-center space-x-2 text-sm font-semibold hover:text-secondary">
+                            <span>View Details</span>
+                            <span class="text-lg">→</span>
+                        </a>
+                    </div>
+                </div>
+                {{-- Teks Mobile --}}
+                <div class="mt-4 px-2 md:hidden">
+                    <span class="text-secondary text-xs font-bold uppercase tracking-widest">Engineering & Maintenance</span>
+                    <h3 class="text-primary text-lg font-bold mt-1 uppercase">Condensor CCTV Installation</h3>
+                    <p class="text-slate-500 text-sm mt-2 line-clamp-2">Technical installation of signal converter units for industrial CCTV monitoring.</p>
+                    <a href="/portfolio" class="text-primary mt-3 flex items-center space-x-2 text-sm font-bold">
+                        <span>View Project</span><span>→</span>
                     </a>
                 </div>
             </div>
-
         </div>
 
         {{-- Button: Lihat Semua (Optional) --}}
