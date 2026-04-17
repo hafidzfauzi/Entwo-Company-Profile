@@ -57,6 +57,32 @@
       opacity: 1;
     }
   }
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+    }
+
+    .animate-marquee {
+        display: flex;
+        width: max-content;
+        animation: marquee 30s linear infinite;
+    }
+
+    /* Pause saat di-hover agar user bisa membaca dengan jelas */
+    .animate-marquee:hover {
+        animation-play-state: paused;
+    }
+
+    .animate-marquee img {
+    /* Memberikan sedikit filter agar logo yang berwarna warni tetap senada dengan desain */
+    filter: brightness(0.8) contrast(1.2);
+    transition: all 0.3s ease;
+    }
+
+    .animate-marquee:hover img {
+        filter: brightness(1) contrast(1);
+    }
 }
 
 /* --- Logic Stretch Background (Swiper) --- */

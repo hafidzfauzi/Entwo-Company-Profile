@@ -195,21 +195,75 @@
         </div>
     </div>
 </section>
-{{-- Client Section - Tambahkan setelah Service --}}
-<section class="py-12 bg-white border-y border-slate-100">
-    <div class="max-w-7xl mx-auto px-6">
-        <p class="text-center text-slate-400 text-sm font-semibold uppercase tracking-widest mb-8">Trusted by Industry Leaders</p>
-        <div class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-            {{-- List Klien dari Compro --}}
-            <span class="font-bold text-xl text-slate-400 italic">S2P (PLTU Cilacap)</span>
-            <span class="font-bold text-xl text-slate-400 italic">D&C Engineering</span>
-            <span class="font-bold text-xl text-slate-400 italic">Tria Dayatama</span>
-            <span class="font-bold text-xl text-slate-400 italic">Gading Mas Utama</span>
+{{-- Client Section --}}
+<section class="py-16 bg-white border-y border-slate-100 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 mb-10">
+        <p class="text-center text-slate-400 text-sm font-semibold uppercase tracking-widest">
+            Trusted by Industry Leaders
+        </p>
+    </div>
+
+    {{-- Container Marquee --}}
+    <div class="relative flex overflow-hidden">
+        <div class="animate-marquee flex items-center gap-16 md:gap-24 space-x-10 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+
+            {{-- List Klien 1 --}}
+            <div class="flex items-center space-x-4 whitespace-nowrap">
+                <img src="{{ Vite::asset('resources/images/PT. SUMBER SEGARA PRIMADAYA (S2P).png') }}" alt="S2P" class="h-10 md:h-14 w-auto object-contain">
+                <span class="font-bold text-lg md:text-xl text-slate-500">PT. SUMBER SEGARA PRIMADAYA</span>
+            </div>
+
+            <div class="flex items-center space-x-4 whitespace-nowrap">
+                <img src="{{ Vite::asset('resources/images/PT D&C ENGINEERING COMPANY.png') }}" alt="D&C" class="h-10 md:h-14 w-auto object-contain">
+                <span class="font-bold text-lg md:text-xl text-slate-500">PT. D&C ENGINEERING</span>
+            </div>
+
+            <div class="flex items-center space-x-4 whitespace-nowrap">
+                <img src="{{ Vite::asset('resources/images/PT. GADING MAS UTAMA.png') }}" alt="Gading Mas" class="h-10 md:h-14 w-auto object-contain">
+                <span class="font-bold text-lg md:text-xl text-slate-500">PT. GADING MAS UTAMA</span>
+            </div>
+
+            <div class="flex items-center space-x-4 whitespace-nowrap">
+                <img src="{{ Vite::asset('resources/images/PT. TRIA DAYATAMA POWER SOLUSINDO.png') }}" alt="Tria Dayatama" class="h-10 md:h-14 w-auto object-contain">
+                <span class="font-bold text-lg md:text-xl text-slate-500">PT. TRIA DAYATAMA POWER SOLUSINDO</span>
+            </div>
+
+            <div class="flex items-center space-x-4 whitespace-nowrap">
+                <img src="{{ Vite::asset('resources/images/BUT CHINA NATIONAL CHEMICAL ENGINEERING CO., LTD (BUT. CNCEC).png') }}" alt="CNCEC" class="h-10 md:h-14 w-auto object-contain">
+                <span class="font-bold text-lg md:text-xl text-slate-500">BUT. CNCEC</span>
+            </div>
+
+            {{-- Duplikasi List Klien agar menyambung terus --}}
+            <div class="flex items-center space-x-4 whitespace-nowrap">
+                <img src="{{ Vite::asset('resources/images/PT. SUMBER SEGARA PRIMADAYA (S2P).png') }}" alt="S2P" class="h-10 md:h-14 w-auto object-contain">
+                <span class="font-bold text-lg md:text-xl text-slate-500">PT. SUMBER SEGARA PRIMADAYA</span>
+            </div>
+
+            <div class="flex items-center space-x-4 whitespace-nowrap">
+                <img src="{{ Vite::asset('resources/images/PT D&C ENGINEERING COMPANY.png') }}" alt="D&C" class="h-10 md:h-14 w-auto object-contain">
+                <span class="font-bold text-lg md:text-xl text-slate-500">PT D&C ENGINEERING</span>
+            </div>
+
+            <div class="flex items-center space-x-4 whitespace-nowrap">
+                <img src="{{ Vite::asset('resources/images/PT. GADING MAS UTAMA.png') }}" alt="Gading Mas" class="h-10 md:h-14 w-auto object-contain">
+                <span class="font-bold text-lg md:text-xl text-slate-500">PT. GADING MAS UTAMA</span>
+            </div>
+
+            <div class="flex items-center space-x-4 whitespace-nowrap">
+                <img src="{{ Vite::asset('resources/images/PT. TRIA DAYATAMA POWER SOLUSINDO.png') }}" alt="Tria Dayatama" class="h-10 md:h-14 w-auto object-contain">
+                <span class="font-bold text-lg md:text-xl text-slate-500">PT. TRIA DAYATAMA POWER SOLUSINDO</span>
+            </div>
+
+            <div class="flex items-center space-x-4 whitespace-nowrap">
+                <img src="{{ Vite::asset('resources/images/BUT CHINA NATIONAL CHEMICAL ENGINEERING CO., LTD (BUT. CNCEC).png') }}" alt="CNCEC" class="h-10 md:h-14 w-auto object-contain">
+                <span class="font-bold text-lg md:text-xl text-slate-500">BUT. CNCEC</span>
+            </div>
+
         </div>
     </div>
 </section>
 {{-- Portfolio Section --}}
-<section id="portfolio" class="py-24 bg-white">
+<section id="portfolio" class="py-24 bg-slate-50 overflow-hidden">
     <div class="max-w-7xl mx-auto px-6">
 
         {{-- Header: Dibuat simpel dan elegan --}}
