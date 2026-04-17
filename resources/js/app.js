@@ -12,6 +12,20 @@ document.addEventListener('DOMContentLoaded', () => {
             mobileMenu.classList.toggle('hidden');
         });
     }
+    // Logic Scroll To Top
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            // Saat di-scroll ke bawah
+            navbar.classList.remove('bg-transparent', 'py-4');
+            navbar.classList.add('bg-primary/70', 'backdrop-blur-md', 'shadow-lg', 'py-2');
+        } else {
+            // Saat kembali ke paling atas (Home)
+            navbar.classList.remove('bg-primary/90', 'backdrop-blur-md', 'shadow-lg', 'py-2');
+            navbar.classList.add('bg-transparent', 'py-4');
+        }
+    });
     // Logic Hero Swiper
     const swiperElement = document.querySelector('.hero-swiper');
 

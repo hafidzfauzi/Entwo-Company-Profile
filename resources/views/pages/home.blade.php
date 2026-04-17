@@ -41,7 +41,7 @@
     <div class="absolute inset-0 z-20 flex flex-col items-center justify-center px-6">
         <div class="text-center animate-fade-in">
             <h1 class="text-3xl md:text-6xl font-bold leading-tight text-white drop-shadow-lg">
-                Welcome to <span class="text-secondary">Entwo</span>
+                Welcome to <br><span class="text-secondary">Entwo Electronic & Engineering</span>
             </h1>
             <p class="mt-4 text-base md:text-lg text-slate-200 opacity-90 max-w-lg mx-auto drop-shadow-md">
                 Innovative IT Solutions for Your Business

@@ -22,7 +22,7 @@
   .section-title {
     @apply text-3xl md:text-4xl font-bold text-primary text-center;
   }
-  
+
   /* Tambahan: Paksa Swiper setinggi layar penuh */
   .hero-swiper {
     @apply w-full h-screen;
@@ -73,19 +73,53 @@
 .hero-swiper .swiper-slide img {
   width: 100% !important;
   height: 100% !important;
-  /* Gunakan object-fill agar gambar 'ditarik' paksa mengikuti 
-     lebar dan tinggi layar (efek stretch). 
+  /* Gunakan object-fill agar gambar 'ditarik' paksa mengikuti
+     lebar dan tinggi layar (efek stretch).
   */
-  object-fit: fill !important; 
+  object-fit: fill !important;
   display: block;
 }
 
 .swiper-pagination-bullet-active
     --color-secondary: #38BDF8;
-/* Opsional: Di desktop tetap pakai cover biar nggak terlalu gepeng, 
+/* Opsional: Di desktop tetap pakai cover biar nggak terlalu gepeng,
    tapi kalau kamu mau stretch di SEMUA layar, hapus @media ini. */
 @media (min-width: 768px) {
   .hero-swiper .swiper-slide img {
     object-fit: cover !important;
   }
+}
+
+/* Navbar Default (Mobile First) */
+#navbar {
+    padding-top: 0.3rem;    /* py-2 */
+    padding-bottom: 0.3rem; /* py-2 */
+    transition: all 0.3s ease-in-out;
+}
+
+#navbar img {
+    height: 1.5rem; /* h-6 untuk mobile agar lebih ramping */
+    width: auto;
+}
+
+#navbar span {
+    font-size: 1.125rem; /* text-lg */
+}
+
+/* Navbar Desktop (Layar 768px ke atas) */
+@media (min-width: 768px) {
+    #navbar {
+        padding-top: 0.4rem;    /* py-4 */
+        padding-bottom: 0.4rem; /* py-4 */
+        padding-left: 1.5rem;   /* px-6 */
+        padding-right: 1.5rem;  /* px-6 */
+    }
+
+    #navbar img {
+        height: 2.5rem; /* h-10 kembali ke ukuran asli desktop */
+    }
+
+    #navbar span {
+        font-size: 1.5rem; /* text-2xl */
+    }
 }
