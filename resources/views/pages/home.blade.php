@@ -205,57 +205,57 @@
 
     {{-- Container Marquee --}}
     <div class="relative flex overflow-hidden">
-        <div class="animate-marquee flex items-center gap-16 md:gap-24 space-x-10 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+        <div class="animate-marquee flex items-center gap-16 md:gap-24 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
 
             {{-- List Klien 1 --}}
             <div class="flex items-center space-x-4 whitespace-nowrap">
-                <img src="{{ Vite::asset('resources/images/PT. SUMBER SEGARA PRIMADAYA (S2P).png') }}" alt="S2P" class="h-10 md:h-14 w-auto object-contain">
+                <img src="{{ Vite::asset('resources/images/PT. SUMBER SEGARA PRIMADAYA (S2P).ico') }}" alt="S2P" class="h-10 md:h-14 w-auto object-contain">
                 <span class="font-bold text-lg md:text-xl text-slate-500">PT. SUMBER SEGARA PRIMADAYA</span>
             </div>
 
             <div class="flex items-center space-x-4 whitespace-nowrap">
-                <img src="{{ Vite::asset('resources/images/PT D&C ENGINEERING COMPANY.png') }}" alt="D&C" class="h-10 md:h-14 w-auto object-contain">
-                <span class="font-bold text-lg md:text-xl text-slate-500">PT. D&C ENGINEERING</span>
+                <img src="{{ Vite::asset('resources/images/PT D&C ENGINEERING COMPANY.ico') }}" alt="D&C" class="h-10 md:h-14 w-auto object-contain">
+                <span class="font-bold text-lg md:text-xl text-slate-500">PT. D&C ENGINEERING COMPANY</span>
             </div>
 
             <div class="flex items-center space-x-4 whitespace-nowrap">
-                <img src="{{ Vite::asset('resources/images/PT. GADING MAS UTAMA.png') }}" alt="Gading Mas" class="h-10 md:h-14 w-auto object-contain">
+                <img src="{{ Vite::asset('resources/images/PT. GADING MAS UTAMA.ico') }}" alt="Gading Mas" class="h-10 md:h-14 w-auto object-contain">
                 <span class="font-bold text-lg md:text-xl text-slate-500">PT. GADING MAS UTAMA</span>
             </div>
 
             <div class="flex items-center space-x-4 whitespace-nowrap">
-                <img src="{{ Vite::asset('resources/images/PT. TRIA DAYATAMA POWER SOLUSINDO.png') }}" alt="Tria Dayatama" class="h-10 md:h-14 w-auto object-contain">
+                <img src="{{ Vite::asset('resources/images/PT. TRIA DAYATAMA POWER SOLUSINDO.ico') }}" alt="Tria Dayatama" class="h-10 md:h-14 w-auto object-contain">
                 <span class="font-bold text-lg md:text-xl text-slate-500">PT. TRIA DAYATAMA POWER SOLUSINDO</span>
             </div>
 
             <div class="flex items-center space-x-4 whitespace-nowrap">
-                <img src="{{ Vite::asset('resources/images/BUT CHINA NATIONAL CHEMICAL ENGINEERING CO., LTD (BUT. CNCEC).png') }}" alt="CNCEC" class="h-10 md:h-14 w-auto object-contain">
+                <img src="{{ Vite::asset('resources/images/BUT CHINA NATIONAL CHEMICAL ENGINEERING CO., LTD (BUT. CNCEC).ico') }}" alt="CNCEC" class="h-10 md:h-14 w-auto object-contain">
                 <span class="font-bold text-lg md:text-xl text-slate-500">BUT. CNCEC</span>
             </div>
 
             {{-- Duplikasi List Klien agar menyambung terus --}}
             <div class="flex items-center space-x-4 whitespace-nowrap">
-                <img src="{{ Vite::asset('resources/images/PT. SUMBER SEGARA PRIMADAYA (S2P).png') }}" alt="S2P" class="h-10 md:h-14 w-auto object-contain">
+                <img src="{{ Vite::asset('resources/images/PT. SUMBER SEGARA PRIMADAYA (S2P).ico') }}" alt="S2P" class="h-10 md:h-14 w-auto object-contain">
                 <span class="font-bold text-lg md:text-xl text-slate-500">PT. SUMBER SEGARA PRIMADAYA</span>
             </div>
 
             <div class="flex items-center space-x-4 whitespace-nowrap">
-                <img src="{{ Vite::asset('resources/images/PT D&C ENGINEERING COMPANY.png') }}" alt="D&C" class="h-10 md:h-14 w-auto object-contain">
-                <span class="font-bold text-lg md:text-xl text-slate-500">PT D&C ENGINEERING</span>
+                <img src="{{ Vite::asset('resources/images/PT D&C ENGINEERING COMPANY.ico') }}" alt="D&C" class="h-10 md:h-14 w-auto object-contain">
+                <span class="font-bold text-lg md:text-xl text-slate-500">PT. D&C ENGINEERING COMPANY</span>
             </div>
 
             <div class="flex items-center space-x-4 whitespace-nowrap">
-                <img src="{{ Vite::asset('resources/images/PT. GADING MAS UTAMA.png') }}" alt="Gading Mas" class="h-10 md:h-14 w-auto object-contain">
+                <img src="{{ Vite::asset('resources/images/PT. GADING MAS UTAMA.ico') }}" alt="Gading Mas" class="h-10 md:h-14 w-auto object-contain">
                 <span class="font-bold text-lg md:text-xl text-slate-500">PT. GADING MAS UTAMA</span>
             </div>
 
             <div class="flex items-center space-x-4 whitespace-nowrap">
-                <img src="{{ Vite::asset('resources/images/PT. TRIA DAYATAMA POWER SOLUSINDO.png') }}" alt="Tria Dayatama" class="h-10 md:h-14 w-auto object-contain">
+                <img src="{{ Vite::asset('resources/images/PT. TRIA DAYATAMA POWER SOLUSINDO.ico') }}" alt="Tria Dayatama" class="h-10 md:h-14 w-auto object-contain">
                 <span class="font-bold text-lg md:text-xl text-slate-500">PT. TRIA DAYATAMA POWER SOLUSINDO</span>
             </div>
 
             <div class="flex items-center space-x-4 whitespace-nowrap">
-                <img src="{{ Vite::asset('resources/images/BUT CHINA NATIONAL CHEMICAL ENGINEERING CO., LTD (BUT. CNCEC).png') }}" alt="CNCEC" class="h-10 md:h-14 w-auto object-contain">
+                <img src="{{ Vite::asset('resources/images/BUT CHINA NATIONAL CHEMICAL ENGINEERING CO., LTD (BUT. CNCEC).ico') }}" alt="CNCEC" class="h-10 md:h-14 w-auto object-contain">
                 <span class="font-bold text-lg md:text-xl text-slate-500">BUT. CNCEC</span>
             </div>
 
