@@ -205,58 +205,54 @@
 
     {{-- Container Marquee --}}
     <div class="relative flex overflow-hidden">
-        <div class="animate-marquee flex items-center gap-16 md:gap-24 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+        <div class="animate-marquee flex items-center opacity-50 grayscale hover:grayscale-0 transition-all duration-500 py-4">
 
-            {{-- List Klien 1 --}}
-            <div class="flex items-center space-x-4 whitespace-nowrap">
-                <img src="{{ Vite::asset('resources/images/PT. SUMBER SEGARA PRIMADAYA (S2P).ico') }}" alt="S2P" class="h-10 md:h-14 w-auto object-contain">
-                <span class="font-bold text-lg md:text-xl text-slate-500">PT. SUMBER SEGARA PRIMADAYA</span>
+            {{-- Grup 1 --}}
+            <div class="flex items-center gap-16 md:gap-24 px-8 md:px-12">
+                <div class="flex items-center space-x-4 whitespace-nowrap">
+                    <img src="{{ Vite::asset('resources/images/PT. SUMBER SEGARA PRIMADAYA (S2P).ico') }}" alt="S2P" class="h-10 md:h-14 w-auto object-contain">
+                    <span class="font-bold text-lg md:text-xl text-slate-500">PT. SUMBER SEGARA PRIMADAYA</span>
+                </div>
+                <div class="flex items-center space-x-4 whitespace-nowrap">
+                    <img src="{{ Vite::asset('resources/images/PT D&C ENGINEERING COMPANY.ico') }}" alt="D&C" class="h-10 md:h-14 w-auto object-contain">
+                    <span class="font-bold text-lg md:text-xl text-slate-500">PT. D&C ENGINEERING COMPANY</span>
+                </div>
+                <div class="flex items-center space-x-4 whitespace-nowrap">
+                    <img src="{{ Vite::asset('resources/images/PT. GADING MAS UTAMA.ico') }}" alt="Gading Mas" class="h-10 md:h-14 w-auto object-contain">
+                    <span class="font-bold text-lg md:text-xl text-slate-500">PT. GADING MAS UTAMA</span>
+                </div>
+                <div class="flex items-center space-x-4 whitespace-nowrap">
+                    <img src="{{ Vite::asset('resources/images/PT. TRIA DAYATAMA POWER SOLUSINDO.ico') }}" alt="Tria Dayatama" class="h-10 md:h-14 w-auto object-contain">
+                    <span class="font-bold text-lg md:text-xl text-slate-500">PT. TRIA DAYATAMA POWER SOLUSINDO</span>
+                </div>
+                <div class="flex items-center space-x-4 whitespace-nowrap">
+                    <img src="{{ Vite::asset('resources/images/BUT CHINA NATIONAL CHEMICAL ENGINEERING CO., LTD (BUT. CNCEC).ico') }}" alt="CNCEC" class="h-10 md:h-14 w-auto object-contain">
+                    <span class="font-bold text-lg md:text-xl text-slate-500">BUT. CNCEC</span>
+                </div>
             </div>
 
-            <div class="flex items-center space-x-4 whitespace-nowrap">
-                <img src="{{ Vite::asset('resources/images/PT D&C ENGINEERING COMPANY.ico') }}" alt="D&C" class="h-10 md:h-14 w-auto object-contain">
-                <span class="font-bold text-lg md:text-xl text-slate-500">PT. D&C ENGINEERING COMPANY</span>
-            </div>
-
-            <div class="flex items-center space-x-4 whitespace-nowrap">
-                <img src="{{ Vite::asset('resources/images/PT. GADING MAS UTAMA.ico') }}" alt="Gading Mas" class="h-10 md:h-14 w-auto object-contain">
-                <span class="font-bold text-lg md:text-xl text-slate-500">PT. GADING MAS UTAMA</span>
-            </div>
-
-            <div class="flex items-center space-x-4 whitespace-nowrap">
-                <img src="{{ Vite::asset('resources/images/PT. TRIA DAYATAMA POWER SOLUSINDO.ico') }}" alt="Tria Dayatama" class="h-10 md:h-14 w-auto object-contain">
-                <span class="font-bold text-lg md:text-xl text-slate-500">PT. TRIA DAYATAMA POWER SOLUSINDO</span>
-            </div>
-
-            <div class="flex items-center space-x-4 whitespace-nowrap">
-                <img src="{{ Vite::asset('resources/images/BUT CHINA NATIONAL CHEMICAL ENGINEERING CO., LTD (BUT. CNCEC).ico') }}" alt="CNCEC" class="h-10 md:h-14 w-auto object-contain">
-                <span class="font-bold text-lg md:text-xl text-slate-500">BUT. CNCEC</span>
-            </div>
-
-            {{-- Duplikasi List Klien agar menyambung terus --}}
-            <div class="flex items-center space-x-4 whitespace-nowrap">
-                <img src="{{ Vite::asset('resources/images/PT. SUMBER SEGARA PRIMADAYA (S2P).ico') }}" alt="S2P" class="h-10 md:h-14 w-auto object-contain">
-                <span class="font-bold text-lg md:text-xl text-slate-500">PT. SUMBER SEGARA PRIMADAYA</span>
-            </div>
-
-            <div class="flex items-center space-x-4 whitespace-nowrap">
-                <img src="{{ Vite::asset('resources/images/PT D&C ENGINEERING COMPANY.ico') }}" alt="D&C" class="h-10 md:h-14 w-auto object-contain">
-                <span class="font-bold text-lg md:text-xl text-slate-500">PT. D&C ENGINEERING COMPANY</span>
-            </div>
-
-            <div class="flex items-center space-x-4 whitespace-nowrap">
-                <img src="{{ Vite::asset('resources/images/PT. GADING MAS UTAMA.ico') }}" alt="Gading Mas" class="h-10 md:h-14 w-auto object-contain">
-                <span class="font-bold text-lg md:text-xl text-slate-500">PT. GADING MAS UTAMA</span>
-            </div>
-
-            <div class="flex items-center space-x-4 whitespace-nowrap">
-                <img src="{{ Vite::asset('resources/images/PT. TRIA DAYATAMA POWER SOLUSINDO.ico') }}" alt="Tria Dayatama" class="h-10 md:h-14 w-auto object-contain">
-                <span class="font-bold text-lg md:text-xl text-slate-500">PT. TRIA DAYATAMA POWER SOLUSINDO</span>
-            </div>
-
-            <div class="flex items-center space-x-4 whitespace-nowrap">
-                <img src="{{ Vite::asset('resources/images/BUT CHINA NATIONAL CHEMICAL ENGINEERING CO., LTD (BUT. CNCEC).ico') }}" alt="CNCEC" class="h-10 md:h-14 w-auto object-contain">
-                <span class="font-bold text-lg md:text-xl text-slate-500">BUT. CNCEC</span>
+            {{-- Grup 2 (Duplikasi Identik) --}}
+            <div class="flex items-center gap-16 md:gap-24 px-8 md:px-12" aria-hidden="true">
+                <div class="flex items-center space-x-4 whitespace-nowrap">
+                    <img src="{{ Vite::asset('resources/images/PT. SUMBER SEGARA PRIMADAYA (S2P).ico') }}" alt="S2P" class="h-10 md:h-14 w-auto object-contain">
+                    <span class="font-bold text-lg md:text-xl text-slate-500">PT. SUMBER SEGARA PRIMADAYA</span>
+                </div>
+                <div class="flex items-center space-x-4 whitespace-nowrap">
+                    <img src="{{ Vite::asset('resources/images/PT D&C ENGINEERING COMPANY.ico') }}" alt="D&C" class="h-10 md:h-14 w-auto object-contain">
+                    <span class="font-bold text-lg md:text-xl text-slate-500">PT. D&C ENGINEERING COMPANY</span>
+                </div>
+                <div class="flex items-center space-x-4 whitespace-nowrap">
+                    <img src="{{ Vite::asset('resources/images/PT. GADING MAS UTAMA.ico') }}" alt="Gading Mas" class="h-10 md:h-14 w-auto object-contain">
+                    <span class="font-bold text-lg md:text-xl text-slate-500">PT. GADING MAS UTAMA</span>
+                </div>
+                <div class="flex items-center space-x-4 whitespace-nowrap">
+                    <img src="{{ Vite::asset('resources/images/PT. TRIA DAYATAMA POWER SOLUSINDO.ico') }}" alt="Tria Dayatama" class="h-10 md:h-14 w-auto object-contain">
+                    <span class="font-bold text-lg md:text-xl text-slate-500">PT. TRIA DAYATAMA POWER SOLUSINDO</span>
+                </div>
+                <div class="flex items-center space-x-4 whitespace-nowrap">
+                    <img src="{{ Vite::asset('resources/images/BUT CHINA NATIONAL CHEMICAL ENGINEERING CO., LTD (BUT. CNCEC).ico') }}" alt="CNCEC" class="h-10 md:h-14 w-auto object-contain">
+                    <span class="font-bold text-lg md:text-xl text-slate-500">BUT. CNCEC</span>
+                </div>
             </div>
 
         </div>
@@ -282,7 +278,7 @@
             {{-- Project 1: PIMS OSISOFT --}}
             <div class="group flex flex-col">
                 <div class="relative overflow-hidden rounded-2xl bg-primary aspect-[4/3] shadow-lg">
-                    <img src="{{ Vite::asset('resources/images/project1.png') }}"
+                    <img src="{{ Vite::asset('resources/images/projectPIMS.png') }}"
                         class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110 md:group-hover:opacity-40">
 
                     {{-- Hover Desktop --}}
@@ -309,7 +305,7 @@
             {{-- Project 2: Online Attendance --}}
             <div class="group flex flex-col">
                 <div class="relative overflow-hidden rounded-2xl bg-primary aspect-[4/3] shadow-lg">
-                    <img src="{{ Vite::asset('resources/images/project2.png') }}"
+                    <img src="{{ Vite::asset('resources/images/projectAbsen.png') }}"
                         class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110 md:group-hover:opacity-40">
 
                     {{-- Hover Desktop --}}
@@ -393,7 +389,7 @@
                     <div class="w-full lg:w-1/2 p-8 md:p-14 space-y-6">
                         <div class="flex items-center space-x-4">
                             <div class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-primary font-bold text-xl">🛡️</div>
-                            <h3 class="text-3xl font-black tracking-tighter uppercase italic text-secondary">SHEguard</h3>
+                            <h3 class="text-3xl font-bold tracking-tighter uppercase text-secondary">SHEguard</h3>
                         </div>
                         <p class="text-slate-300 leading-relaxed text-sm md:text-base">
                             A software system designed to help companies manage and improve HSE aspects. It creates a safer work environment and ensures compliance with environmental regulations.
@@ -402,7 +398,7 @@
                         {{-- Feature Grid dari Screenshot --}}
                         <div class="grid grid-cols-2 md:grid-cols-3 gap-3 pt-4">
                             @foreach(['Risk Control', 'Incident Reporting', 'Compliance Monitoring', 'HSE Training', 'Document Management', 'Data Analysis'] as $feature)
-                                <div class="bg-white/5 border border-white/10 px-3 py-2 rounded-lg text-[10px] uppercase font-bold text-slate-400 flex items-center space-x-2">
+                                <div class="bg-white/5 border border-white/10 px-3 py-2 rounded-lg text-[10px] uppercase hover:scale-105 hover:bg-secondary/50 hover:text-white font-bold text-slate-400 flex items-center space-x-2">
                                     <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
                                     <span>{{ $feature }}</span>
                                 </div>
@@ -425,7 +421,7 @@
                     <div class="w-full lg:w-1/2 p-8 md:p-14 space-y-6">
                         <div class="flex items-center space-x-4">
                             <div class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-primary font-bold text-xl">🥽</div>
-                            <h3 class="text-3xl font-black tracking-tighter uppercase italic text-secondary">AUGMEE.ID</h3>
+                            <h3 class="text-3xl font-bold tracking-tighter uppercase text-secondary">AUGMEE.ID</h3>
                         </div>
                         <p class="text-slate-300 leading-relaxed text-sm md:text-base">
                             Technology company focusing on the development of virtual solutions like AR and VR. We assist companies in adopting advanced technology to enhance performance and productivity.
@@ -485,7 +481,9 @@
                         </div>
                         <div>
                             <h5 class="font-bold text-primary">Office Location</h5>
-                            <p class="text-slate-500 text-sm">Jl. Lengkong No 160 RT 03/13 Cilacap, Central Java, Indonesia</p>
+                            <p class="text-slate-500 text-sm " style="width: 300px;">
+                                Jl. Lengkong No 160 RT 03/13 Cilacap, Central Java, Indonesia
+                            </p>
                         </div>
                     </div>
 
