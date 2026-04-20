@@ -20,7 +20,7 @@
         </button>
     </div>
 
-    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 bg-primary/95 backdrop-blur-md">
+    <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-primary/90 backdrop-blur-2xl border-b border-white/10 px-8 py-10 shadow-2xl">
         <a href="#hero" class="block py-2">Home</a>
         <a href="#about" class="block py-2">About Us</a>
         <a href="#service" class="block py-2 border-t border-white/10 pt-2">Services</a>
