@@ -369,43 +369,95 @@
         </div>
     </div>
 </section>
-{{-- Product Section - Tambahkan setelah Portfolio --}}
+{{-- Product Section --}}
 <section id="products" class="py-24 bg-primary text-white overflow-hidden">
     <div class="max-w-7xl mx-auto px-6">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-            <div>
-                <h4 class="text-secondary font-bold tracking-widest uppercase text-sm">Our Innovations</h4>
-                <h2 class="text-3xl md:text-5xl font-bold">Smart Industrial Solutions</h2>
+
+        {{-- Header Section --}}
+        <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
+            <div class="space-y-4">
+                <h4 class="text-secondary font-bold tracking-[0.2em] uppercase text-sm">Our Innovations</h4>
+                <h2 class="text-3xl md:text-5xl font-bold leading-tight">Advanced Digital <br> <span class="text-secondary text-outline">Solutions</span></h2>
             </div>
-            <p class="text-slate-300 max-w-md md:text-right">
-                Beyond services, we develop proprietary platforms to enhance your operational safety and efficiency.
+            <p class="text-slate-400 max-w-md md:text-right italic text-sm">
+                "Embrace the future with ENTWO, where solutions meet excellence."
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {{-- Product: SHEguard --}}
-            <div class="bg-white/5 p-8 rounded-3xl border border-white/10 hover:bg-white/10 transition">
-                <div class="flex items-center space-x-4 mb-6">
-                    <div class="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center text-primary text-3xl">🛡️</div>
-                    <h3 class="text-2xl font-bold">SHEguard</h3>
+        <div class="space-y-16">
+
+            {{-- Product 1: SHEguard --}}
+            <div class="group bg-white/5 rounded-[2.5rem] border border-white/10 overflow-hidden hover:border-secondary/50 transition-all duration-500">
+                <div class="flex flex-col lg:flex-row items-center">
+                    {{-- Deskripsi Teks --}}
+                    <div class="w-full lg:w-1/2 p-8 md:p-14 space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-primary font-bold text-xl">🛡️</div>
+                            <h3 class="text-3xl font-black tracking-tighter uppercase italic text-secondary">SHEguard</h3>
+                        </div>
+                        <p class="text-slate-300 leading-relaxed text-sm md:text-base">
+                            A software system designed to help companies manage and improve HSE aspects. It creates a safer work environment and ensures compliance with environmental regulations.
+                        </p>
+
+                        {{-- Feature Grid dari Screenshot --}}
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-3 pt-4">
+                            @foreach(['Risk Control', 'Incident Reporting', 'Compliance Monitoring', 'HSE Training', 'Document Management', 'Data Analysis'] as $feature)
+                                <div class="bg-white/5 border border-white/10 px-3 py-2 rounded-lg text-[10px] uppercase font-bold text-slate-400 flex items-center space-x-2">
+                                    <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+                                    <span>{{ $feature }}</span>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                    {{-- Preview Aplikasi (Mockup dari Screenshot) --}}
+                    <div class="w-full lg:w-1/2 p-8 bg-gradient-to-br from-secondary/20 to-transparent">
+                        <img src="{{ Vite::asset('resources/images/SheGuard.png') }}"
+                             alt="SHEguard Dashboard"
+                             class="rounded-xl shadow-2xl transform group-hover:scale-105 transition duration-500">
+                    </div>
                 </div>
-                <p class="text-slate-400 mb-6 leading-relaxed">
-                    Designed to help companies manage and improve HSE aspects through risk control, incident reporting, and compliance monitoring.
-                </p>
-                <span class="text-secondary font-bold text-sm uppercase tracking-tighter">HSE Management Platform</span>
             </div>
 
-            {{-- Product: Augmee --}}
-            <div class="bg-white/5 p-8 rounded-3xl border border-white/10 hover:bg-white/10 transition">
-                <div class="flex items-center space-x-4 mb-6">
-                    <div class="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center text-primary text-3xl">🕶️</div>
-                    <h3 class="text-2xl font-bold">AUGMEE.ID</h3>
+            {{-- Product 2: AUGMEE.ID --}}
+            <div class="group bg-white/5 rounded-[2.5rem] border border-white/10 overflow-hidden hover:border-secondary/50 transition-all duration-500">
+                <div class="flex flex-col lg:flex-row-reverse items-center">
+                    {{-- Deskripsi Teks --}}
+                    <div class="w-full lg:w-1/2 p-8 md:p-14 space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-primary font-bold text-xl">🥽</div>
+                            <h3 class="text-3xl font-black tracking-tighter uppercase italic text-secondary">AUGMEE.ID</h3>
+                        </div>
+                        <p class="text-slate-300 leading-relaxed text-sm md:text-base">
+                            Technology company focusing on the development of virtual solutions like AR and VR. We assist companies in adopting advanced technology to enhance performance and productivity.
+                        </p>
+
+                        <div class="bg-secondary/10 border-l-4 border-secondary p-4 rounded-r-xl">
+                            <p class="text-xs text-secondary font-bold italic">
+                                "Combining AR and IOT become a great solution to visualize realtime process in field."
+                            </p>
+                        </div>
+
+                        <div class="flex space-x-4 pt-4">
+                            <div class="text-center">
+                                <p class="text-2xl font-bold text-white">AR</p>
+                                <p class="text-[10px] text-slate-500 uppercase">Augmented Reality</p>
+                            </div>
+                            <div class="w-[1px] bg-white/10"></div>
+                            <div class="text-center">
+                                <p class="text-2xl font-bold text-white">VR</p>
+                                <p class="text-[10px] text-slate-500 uppercase">Virtual Reality</p>
+                            </div>
+                        </div>
+                    </div>
+                    {{-- Preview Aplikasi (Mockup dari Screenshot) --}}
+                    <div class="w-full lg:w-1/2 p-8 bg-gradient-to-bl from-secondary/20 to-transparent">
+                        <img src="{{ Vite::asset('resources/images/augmeeid.png') }}"
+                             alt="AUGMEE AR Visualization"
+                             class="rounded-xl shadow-2xl transform group-hover:scale-105 transition duration-500">
+                    </div>
                 </div>
-                <p class="text-slate-400 mb-6 leading-relaxed">
-                    Development of virtual solutions using AR and VR technology to enhance performance, productivity, and industrial competitiveness.
-                </p>
-                <span class="text-secondary font-bold text-sm uppercase tracking-tighter">AR/VR Solution Provider</span>
             </div>
+
         </div>
     </div>
 </section>
@@ -454,7 +506,7 @@
                             <span>📞</span>
                         </div>
                         <div>
-                            <h5 class="font-bold text-primary">Phone & WhatsApp</h5>
+                            <h5 class="font-bold text-primary">Phone</h5>
                             <p class="text-slate-500 text-sm">(0282) 5561812</p>
                         </div>
                     </div>
@@ -469,13 +521,13 @@
                             {{-- Nama --}}
                             <div class="space-y-2">
                                 <label class="text-sm font-bold text-primary ml-1">Your Name</label>
-                                <input type="text" name="name" placeholder="John Doe"
+                                <input type="text" name="name" placeholder="Hafidz Fauzi"
                                     class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition">
                             </div>
                             {{-- Email --}}
                             <div class="space-y-2">
                                 <label class="text-sm font-bold text-primary ml-1">Email Address</label>
-                                <input type="email" name="email" placeholder="john@example.com"
+                                <input type="email" name="email" placeholder="hafidz@example.com"
                                     class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition">
                             </div>
                         </div>

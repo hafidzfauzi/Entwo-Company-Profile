@@ -40,8 +40,8 @@
                 <h4 class="text-lg font-semibold mb-6 border-b-2 border-secondary w-fit">Contact Us</h4>
                 <ul class="space-y-4 text-slate-400 text-sm">
                     <li class="flex items-start space-x-4"><span class="text-secondary">📍</span> <span> Jl. Lengkong No 160 RT 03/13 Cilacap, Jawa Tengah, Indonesia</span></li>
-                    <li class="flex items-start space-x-4"><span class="text-secondary">📧</span> <span> (0282) 5561812</span></li>
-                    <li class="flex items-start space-x-4"><span class="text-secondary">📞</span> <span> office@entwo.co.id</span></li>
+                    <li class="flex items-start space-x-4"><span class="text-secondary">📧</span> <span> office@entwo.co.id</span></li>
+                    <li class="flex items-start space-x-4"><span class="text-secondary">📞</span> <span> (0282) 5561812</span></li>
                 </ul>
             </div>
         </div>
