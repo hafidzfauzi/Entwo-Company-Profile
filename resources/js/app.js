@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         easing: 'ease-out-cubic', // Gaya animasi biar smooth
         once: false,        // PENTING: Ubah ke false agar animasi berulang tiap scroll!
         mirror: true,       // Animasi juga jalan saat discroll ke atas (kembali)
-        offset: 100,       // Jarak elemen dari bawah layar sebelum animasi mulai
+        offset: 50,       // Jarak elemen dari bawah layar sebelum animasi mulai
     });
 
     // 2. Logic Smooth Scroll ke ID (Vanilla JS)
