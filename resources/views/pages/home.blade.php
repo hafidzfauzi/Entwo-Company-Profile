@@ -60,7 +60,7 @@
             <div class="flex flex-col lg:flex-row items-center gap-16">
 
                 {{-- Left Column: Image --}}
-                <div class="w-full lg:w-1/2 relative animate-fade-in">
+                <div class="w-full lg:w-1/2 relative" data-aos="fade-right">
                     <div class="absolute -top-6 -left-6 w-32 h-32 bg-secondary/20 rounded-full -z-10 animate-pulse blur-2xl"></div>
                     <div class="absolute -bottom-10 -right-6 w-48 h-48 bg-accent/10 rounded-2xl -z-10 rotate-12 blur-xl"></div>
 
@@ -76,7 +76,7 @@
                 </div>
 
                 {{-- Right Column: Copy --}}
-                <div class="w-full lg:w-1/2 space-y-8">
+                <div class="w-full lg:w-1/2 space-y-8" data-aos="fade-left" data-aos-duration="200">
                     <div class="space-y-4">
                         <div class="flex items-center space-x-2">
                             <span class="w-12 h-[2px] bg-secondary"></span>
@@ -141,7 +141,7 @@
         <div class="max-w-7xl mx-auto px-6">
 
             {{-- Header --}}
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4" data-aos="fade-up" data-aos-duration="5000">
                 <h4 class="text-secondary font-bold tracking-[0.2em] uppercase text-sm">What We Offer</h4>
                 <h2 class="text-3xl md:text-5xl font-bold text-white">Comprehensive Solutions for Industry Needs</h2>
                 <div class="w-20 h-1.5 bg-secondary mx-auto rounded-full"></div>
@@ -363,7 +363,7 @@
             <div class="flex flex-col md:flex-row justify-between items-start mb-20 gap-6">
                 <div class="space-y-4">
                     <h4 class="text-secondary font-bold tracking-[0.2em] uppercase text-sm">Our Innovations</h4>
-                    <h2 class="text-3xl md:text-5xl font-bold leading-tight text-white">Advanced Digital <br> <span class="text-secondary" style="-webkit-text-stroke: 1px #38BDF8;">Solutions</span></h2>
+                    <h2 data-aos="fade-up" class="text-3xl md:text-5xl font-bold leading-tight text-white">Advanced Digital <br> <span class="text-secondary" style="-webkit-text-stroke: 1px #38BDF8;">Solutions</span></h2>
                 </div>
                 <p class="text-slate-400 max-w-md md:text-right italic text-sm">
                     "Embrace the future with ENTWO, where solutions meet excellence."
@@ -392,7 +392,7 @@
                             </div>
                         </div>
                         <div class="w-full lg:w-1/2 p-8 bg-gradient-to-br from-secondary/10 to-transparent">
-                            <img src="{{ Vite::asset('resources/images/SheGuard.png') }}" alt="SHEguard Dashboard" class="rounded-xl border border-slate-700 shadow-2xl transform group-hover:scale-105 transition duration-500">
+                            <img data-aos="fade-left" data-aos-delay="200" src="{{ Vite::asset('resources/images/SheGuard.png') }}" alt="SHEguard Dashboard" class="rounded-xl border border-slate-700 shadow-2xl transform group-hover:scale-105 transition duration-500">
                         </div>
                     </div>
                 </div>
