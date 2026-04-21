@@ -17,17 +17,14 @@
         {{-- Slider Background --}}
         <div class="swiper hero-swiper absolute inset-0 w-full h-full z-0">
             <div class="swiper-wrapper">
-                {{-- Slide 1 --}}
                 <div class="swiper-slide relative h-full w-full">
-                    <div class="absolute inset-0 bg-primary/70 z-10"></div> {{-- Diubah ke primary/70 agar nyambung dgn dark mode --}}
+                    <div class="absolute inset-0 bg-primary/70 z-10"></div>
                     <img src="{{ Vite::asset('resources/images/logo entwo group.png') }}" alt="Entwo Group" class="w-full h-full object-cover block">
                 </div>
-                {{-- Slide 2 --}}
                 <div class="swiper-slide relative h-full w-full">
                     <div class="absolute inset-0 bg-primary/70 z-10"></div>
                     <img src="{{ Vite::asset('resources/images/Logo Entwo.png') }}" alt="Entwo Group" class="w-full h-full object-cover block">
                 </div>
-                {{-- Slide 3 --}}
                 <div class="swiper-slide relative h-full w-full">
                     <div class="absolute inset-0 bg-primary/70 z-10"></div>
                     <img src="{{ Vite::asset('resources/images/img2.jpeg') }}" alt="Entwo Group" class="w-full h-full object-cover block">
@@ -38,7 +35,8 @@
 
         {{-- Konten Teks --}}
         <div class="absolute inset-0 z-20 flex flex-col items-center justify-center px-6">
-            <div class="text-center animate-fade-in">
+            {{-- AOS: Muncul membesar perlahan dari tengah --}}
+            <div class="text-center" data-aos="zoom-in" data-aos-duration="1200">
                 <h1 class="text-3xl md:text-6xl font-bold leading-tight text-white drop-shadow-2xl">
                     Welcome to <br><span class="text-secondary">Entwo Electronic & Engineering</span>
                 </h1>
@@ -47,8 +45,7 @@
                 </p>
             </div>
         </div>
-        
-        {{-- Gradient penutup Hero ke bawah agar transisi smooth --}}
+
         <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-primary to-transparent z-20"></div>
     </section>
 
@@ -56,10 +53,11 @@
     {{-- ABOUT US SECTION --}}
     {{-- ========================================== --}}
     <section id="about" class="py-24 relative z-10">
-        <div class="max-w-7xl mx-auto px-6 animate-fade-in">
+        <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col lg:flex-row items-center gap-16">
 
                 {{-- Left Column: Image --}}
+                {{-- AOS: Slide masuk dari Kiri --}}
                 <div class="w-full lg:w-1/2 relative" data-aos="fade-right">
                     <div class="absolute -top-6 -left-6 w-32 h-32 bg-secondary/20 rounded-full -z-10 animate-pulse blur-2xl"></div>
                     <div class="absolute -bottom-10 -right-6 w-48 h-48 bg-accent/10 rounded-2xl -z-10 rotate-12 blur-xl"></div>
@@ -68,15 +66,15 @@
                         <img src="{{ Vite::asset('resources/images/img3.png') }}" alt="ENTWO Engineering Excellence" class="w-full h-[500px] object-cover hover:scale-105 transition duration-700 opacity-90 hover:opacity-100">
                     </div>
 
-                    {{-- Experience Badge --}}
-                    <div class="absolute -bottom-6 -left-6 bg-secondary p-8 rounded-2xl shadow-xl shadow-secondary/20 hidden md:block">
+                    <div class="absolute -bottom-6 -left-6 bg-secondary p-8 rounded-2xl shadow-xl shadow-secondary/20 hidden md:block" data-aos="zoom-in" data-aos-delay="300">
                         <p class="text-primary text-4xl font-black leading-none">13+</p>
                         <p class="text-primary/80 text-xs font-bold uppercase tracking-tighter">Years of Service</p>
                     </div>
                 </div>
 
                 {{-- Right Column: Copy --}}
-                <div class="w-full lg:w-1/2 space-y-8" data-aos="fade-left" data-aos-duration="200">
+                {{-- AOS: Slide masuk dari Kanan --}}
+                <div class="w-full lg:w-1/2 space-y-8" data-aos="fade-left" data-aos-delay="100">
                     <div class="space-y-4">
                         <div class="flex items-center space-x-2">
                             <span class="w-12 h-[2px] bg-secondary"></span>
@@ -91,26 +89,20 @@
                         <p class="text-slate-300 leading-relaxed text-lg italic border-l-4 border-secondary pl-6 bg-slate-800/30 p-4 rounded-r-xl">
                             "Embrace the future with ENTWO, where solutions meet excellence."
                         </p>
-
                         <p class="text-slate-400 leading-relaxed">
                             CV ENTWO Electronic & Engineering has been a pioneer in the general contracting, supply, automation and maintenance industry since its founding in 2013. Based in Cilacap, Central Java, Indonesia, we have set new standards in providing reliable high-quality solutions to various industries.
                         </p>
-
-                        <p class="text-slate-400 leading-relaxed">
-                            With a professional team committed to excellence, we have established a strong relationship as a trusted partner for our customers. Every step we take is driven by innovation, technical expertise and dedication to delivering the best.
-                        </p>
                     </div>
 
-                    {{-- Feature Grid --}}
                     <div class="grid grid-cols-2 gap-6 pt-4">
-                        <div class="group bg-slate-800/40 p-4 rounded-xl border border-slate-700/50 backdrop-blur-sm">
+                        <div class="group bg-slate-800/40 p-4 rounded-xl border border-slate-700/50 backdrop-blur-sm" data-aos="fade-up" data-aos-delay="300">
                             <div class="flex items-center space-x-3 mb-2">
                                 <span class="text-secondary group-hover:scale-125 transition">⚡</span>
                                 <h5 class="font-bold text-white">Automation</h5>
                             </div>
                             <p class="text-xs text-slate-400">Industry-leading technical expertise.</p>
                         </div>
-                        <div class="group bg-slate-800/40 p-4 rounded-xl border border-slate-700/50 backdrop-blur-sm">
+                        <div class="group bg-slate-800/40 p-4 rounded-xl border border-slate-700/50 backdrop-blur-sm" data-aos="fade-up" data-aos-delay="400">
                             <div class="flex items-center space-x-3 mb-2">
                                 <span class="text-secondary group-hover:scale-125 transition">🛠️</span>
                                 <h5 class="font-bold text-white">Maintenance</h5>
@@ -119,8 +111,7 @@
                         </div>
                     </div>
 
-                    {{-- Action Button --}}
-                    <div class="pt-6">
+                    <div class="pt-6" data-aos="fade-up" data-aos-delay="500">
                         <a href="/about" class="px-8 py-4 bg-secondary text-primary font-bold rounded-xl hover:bg-white hover:shadow-lg hover:shadow-white/10 transition-all flex items-center w-fit space-x-3 group">
                             <span>Learn More About Us</span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 group-hover:translate-x-2 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -141,18 +132,18 @@
         <div class="max-w-7xl mx-auto px-6">
 
             {{-- Header --}}
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4" data-aos="fade-up" data-aos-duration="5000">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4" data-aos="fade-up">
                 <h4 class="text-secondary font-bold tracking-[0.2em] uppercase text-sm">What We Offer</h4>
                 <h2 class="text-3xl md:text-5xl font-bold text-white">Comprehensive Solutions for Industry Needs</h2>
                 <div class="w-20 h-1.5 bg-secondary mx-auto rounded-full"></div>
                 <p class="text-slate-400 italic">"Providing reliable high-quality solutions to various industries."</p>
             </div>
 
-            {{-- Services Grid (Glassmorphism) --}}
+            {{-- Services Grid (Efek Domino / Staggered) --}}
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                
+
                 {{-- Service 1 --}}
-                <div class="bg-slate-800/40 backdrop-blur-md p-8 rounded-3xl border border-slate-700/50 hover:border-secondary/50 shadow-xl hover:shadow-secondary/10 hover:-translate-y-2 transition-all duration-300 group">
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-800/40 backdrop-blur-md p-8 rounded-3xl border border-slate-700/50 hover:border-secondary/50 shadow-xl hover:shadow-secondary/10 hover:-translate-y-2 transition-all duration-300 group">
                     <div class="w-14 h-14 bg-slate-900/50 border border-slate-700 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:border-secondary transition-colors">
                         <span class="text-3xl group-hover:scale-110 transition">🏗️</span>
                     </div>
@@ -163,7 +154,7 @@
                 </div>
 
                 {{-- Service 2 --}}
-                <div class="bg-slate-800/40 backdrop-blur-md p-8 rounded-3xl border border-slate-700/50 hover:border-secondary/50 shadow-xl hover:shadow-secondary/10 hover:-translate-y-2 transition-all duration-300 group">
+                <div data-aos="fade-up" data-aos-delay="200" class="bg-slate-800/40 backdrop-blur-md p-8 rounded-3xl border border-slate-700/50 hover:border-secondary/50 shadow-xl hover:shadow-secondary/10 hover:-translate-y-2 transition-all duration-300 group">
                     <div class="w-14 h-14 bg-slate-900/50 border border-slate-700 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:border-secondary transition-colors">
                         <span class="text-3xl group-hover:scale-110 transition">⚙️</span>
                     </div>
@@ -174,7 +165,7 @@
                 </div>
 
                 {{-- Service 3 --}}
-                <div class="bg-slate-800/40 backdrop-blur-md p-8 rounded-3xl border border-slate-700/50 hover:border-secondary/50 shadow-xl hover:shadow-secondary/10 hover:-translate-y-2 transition-all duration-300 group">
+                <div data-aos="fade-up" data-aos-delay="300" class="bg-slate-800/40 backdrop-blur-md p-8 rounded-3xl border border-slate-700/50 hover:border-secondary/50 shadow-xl hover:shadow-secondary/10 hover:-translate-y-2 transition-all duration-300 group">
                     <div class="w-14 h-14 bg-slate-900/50 border border-slate-700 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:border-secondary transition-colors">
                         <span class="text-3xl group-hover:scale-110 transition">📦</span>
                     </div>
@@ -185,7 +176,7 @@
                 </div>
 
                 {{-- Service 4 --}}
-                <div class="bg-slate-800/40 backdrop-blur-md p-8 rounded-3xl border border-slate-700/50 hover:border-secondary/50 shadow-xl hover:shadow-secondary/10 hover:-translate-y-2 transition-all duration-300 group">
+                <div data-aos="fade-up" data-aos-delay="400" class="bg-slate-800/40 backdrop-blur-md p-8 rounded-3xl border border-slate-700/50 hover:border-secondary/50 shadow-xl hover:shadow-secondary/10 hover:-translate-y-2 transition-all duration-300 group">
                     <div class="w-14 h-14 bg-slate-900/50 border border-slate-700 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:border-secondary transition-colors">
                         <span class="text-3xl group-hover:scale-110 transition">🛠️</span>
                     </div>
@@ -202,7 +193,8 @@
     {{-- ========================================== --}}
     {{-- CLIENT MARQUEE SECTION --}}
     {{-- ========================================== --}}
-    <section class="py-12 bg-slate-900/50 border-y border-slate-800 backdrop-blur-sm relative z-10">
+    {{-- AOS: Fade masuk pelan-pelan --}}
+    <section class="py-12 bg-slate-900/50 border-y border-slate-800 backdrop-blur-sm relative z-10" data-aos="fade-in" data-aos-duration="1000">
         <div class="max-w-7xl mx-auto px-6 mb-8">
             <p class="text-center text-slate-500 text-sm font-bold uppercase tracking-widest">
                 Trusted by Industry Leaders
@@ -211,7 +203,6 @@
 
         <div class="relative flex overflow-hidden">
             <div class="animate-marquee flex items-center opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
-                {{-- Group 1 --}}
                 <div class="flex items-center gap-16 md:gap-24 px-8 md:px-12">
                     <div class="flex items-center space-x-4 whitespace-nowrap">
                         <img src="{{ Vite::asset('resources/images/PT. SUMBER SEGARA PRIMADAYA (S2P).ico') }}" alt="S2P" class="h-10 md:h-12 w-auto object-contain">
@@ -235,9 +226,7 @@
                     </div>
                 </div>
 
-                {{-- Group 2 (Duplicate) --}}
                 <div class="flex items-center gap-16 md:gap-24 px-8 md:px-12" aria-hidden="true">
-                    {{-- Paste isi Group 1 persis di sini --}}
                     <div class="flex items-center space-x-4 whitespace-nowrap">
                         <img src="{{ Vite::asset('resources/images/PT. SUMBER SEGARA PRIMADAYA (S2P).ico') }}" alt="S2P" class="h-10 md:h-12 w-auto object-contain">
                         <span class="font-bold text-lg md:text-xl text-slate-300">PT. SUMBER SEGARA PRIMADAYA</span>
@@ -269,8 +258,7 @@
     <section id="portfolio" class="py-24 relative z-10">
         <div class="max-w-7xl mx-auto px-6">
 
-            {{-- Header --}}
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6" data-aos="fade-up">
                 <div class="space-y-4">
                     <h4 class="text-secondary font-bold tracking-[0.2em] uppercase text-sm">Our Works</h4>
                     <h2 class="text-3xl md:text-5xl font-bold text-white">Featured Projects</h2>
@@ -280,11 +268,10 @@
                 </p>
             </div>
 
-            {{-- Grid Portfolio (Disamakan total dengan style portfolio.blade.php) --}}
+            {{-- Grid Portfolio (Efek Domino / Staggered) --}}
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                {{-- Project 1: PIMS --}}
-                <div class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 hover:shadow-secondary/10 transition-all duration-500">
+
+                <div data-aos="fade-up" data-aos-delay="100" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 hover:shadow-secondary/10 transition-all duration-500">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-[4/3] bg-slate-900 border border-slate-800">
                         <img src="{{ Vite::asset('resources/images/projectPIMS.png') }}" class="w-full h-full object-cover transition duration-700 md:group-hover:scale-110 opacity-90 group-hover:opacity-100">
                         <div class="absolute inset-0 bg-primary/40 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center"></div>
@@ -303,8 +290,7 @@
                     </div>
                 </div>
 
-                {{-- Project 2: Absensi --}}
-                <div class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 hover:shadow-secondary/10 transition-all duration-500">
+                <div data-aos="fade-up" data-aos-delay="200" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 hover:shadow-secondary/10 transition-all duration-500">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-[4/3] bg-slate-900 border border-slate-800">
                         <img src="{{ Vite::asset('resources/images/projectAbsen.png') }}" class="w-full h-full object-cover transition duration-700 md:group-hover:scale-110 opacity-90 group-hover:opacity-100">
                         <div class="absolute inset-0 bg-primary/40 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center"></div>
@@ -323,8 +309,7 @@
                     </div>
                 </div>
 
-                {{-- Project 3: Condensor --}}
-                <div class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 hover:shadow-secondary/10 transition-all duration-500">
+                <div data-aos="fade-up" data-aos-delay="300" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 hover:shadow-secondary/10 transition-all duration-500">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-[4/3] bg-slate-900 border border-slate-800">
                         <img src="{{ Vite::asset('resources/images/projectCondensor.png') }}" class="w-full h-full object-cover transition duration-700 md:group-hover:scale-110 opacity-90 group-hover:opacity-100">
                         <div class="absolute inset-0 bg-primary/40 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center"></div>
@@ -345,8 +330,7 @@
 
             </div>
 
-            {{-- Button --}}
-            <div class="mt-16 text-center">
+            <div class="mt-16 text-center" data-aos="zoom-in">
                 <a href="/portfolio" class="inline-block px-8 py-4 border-2 border-secondary text-secondary font-bold rounded-full hover:bg-secondary hover:text-primary hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300">
                     Explore All Projects
                 </a>
@@ -355,24 +339,28 @@
     </section>
 
     {{-- ========================================== --}}
-    {{-- PRODUCT SECTION (Sudah Dark Mode, kita samakan border/hovernya) --}}
+    {{-- PRODUCT SECTION --}}
     {{-- ========================================== --}}
     <section id="products" class="py-24 relative z-10">
         <div class="max-w-7xl mx-auto px-6">
 
-            <div class="flex flex-col md:flex-row justify-between items-start mb-20 gap-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-20 gap-6" data-aos="fade-down">
                 <div class="space-y-4">
                     <h4 class="text-secondary font-bold tracking-[0.2em] uppercase text-sm">Our Innovations</h4>
-                    <h2 data-aos="fade-up" class="text-3xl md:text-5xl font-bold leading-tight text-white">Advanced Digital <br> <span class="text-secondary" style="-webkit-text-stroke: 1px #38BDF8;">Solutions</span></h2>
+                    <h2 class="text-4xl md:text-5xl font-bold leading-tight text-white">
+                        Advanced Digital <br class="hidden md:block">
+                        <span class="text-secondary" style="-webkit-text-stroke: 1px #38BDF8;">Solutions</span>
+                    </h2>
                 </div>
-                <p class="text-slate-400 max-w-md md:text-right italic text-sm">
+                <p class="text-slate-400 max-w-md text-left md:text-right italic text-sm md:text-base border-l-2 border-secondary pl-4 md:border-l-0 md:pl-0">
                     "Embrace the future with ENTWO, where solutions meet excellence."
                 </p>
             </div>
 
             <div class="space-y-16">
                 {{-- Product 1: SHEguard --}}
-                <div class="group bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] border border-slate-700/50 overflow-hidden hover:border-secondary/50 shadow-xl transition-all duration-500">
+                {{-- AOS: Geser dari Kanan --}}
+                <div data-aos="fade-left" class="group bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] border border-slate-700/50 overflow-hidden hover:border-secondary/50 shadow-xl transition-all duration-500">
                     <div class="flex flex-col lg:flex-row items-center">
                         <div class="w-full lg:w-1/2 p-8 md:p-14 space-y-6">
                             <div class="flex items-center space-x-4">
@@ -392,13 +380,14 @@
                             </div>
                         </div>
                         <div class="w-full lg:w-1/2 p-8 bg-gradient-to-br from-secondary/10 to-transparent">
-                            <img data-aos="fade-left" data-aos-delay="200" src="{{ Vite::asset('resources/images/SheGuard.png') }}" alt="SHEguard Dashboard" class="rounded-xl border border-slate-700 shadow-2xl transform group-hover:scale-105 transition duration-500">
+                            <img src="{{ Vite::asset('resources/images/SheGuard.png') }}" alt="SHEguard Dashboard" class="rounded-xl border border-slate-700 shadow-2xl transform group-hover:scale-105 transition duration-500">
                         </div>
                     </div>
                 </div>
 
                 {{-- Product 2: AUGMEE.ID --}}
-                <div class="group bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] border border-slate-700/50 overflow-hidden hover:border-secondary/50 shadow-xl transition-all duration-500">
+                {{-- AOS: Geser dari Kiri --}}
+                <div data-aos="fade-right" class="group bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] border border-slate-700/50 overflow-hidden hover:border-secondary/50 shadow-xl transition-all duration-500">
                     <div class="flex flex-col lg:flex-row-reverse items-center">
                         <div class="w-full lg:w-1/2 p-8 md:p-14 space-y-6">
                             <div class="flex items-center space-x-4">
@@ -442,7 +431,7 @@
             <div class="flex flex-col lg:flex-row gap-16">
 
                 {{-- Kiri: Info Kontak --}}
-                <div class="w-full lg:w-1/3 space-y-10">
+                <div class="w-full lg:w-1/3 space-y-10" data-aos="fade-right">
                     <div class="space-y-4">
                         <h4 class="text-secondary font-bold tracking-[0.2em] uppercase text-sm">Contact Us</h4>
                         <h2 class="text-3xl md:text-5xl font-bold text-white">Let's Discuss Your Project</h2>
@@ -452,7 +441,6 @@
                     </div>
 
                     <div class="space-y-6">
-                        {{-- Alamat --}}
                         <div class="flex items-start space-x-5 group">
                             <div class="w-12 h-12 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-primary transition-all">
                                 <span>📍</span>
@@ -464,7 +452,6 @@
                                 </p>
                             </div>
                         </div>
-                        {{-- Email --}}
                         <div class="flex items-start space-x-5 group">
                             <div class="w-12 h-12 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-primary transition-all">
                                 <span>📧</span>
@@ -474,7 +461,6 @@
                                 <p class="text-slate-400 text-sm mt-1 italic hover:text-secondary cursor-pointer transition-colors">office@entwo.co.id</p>
                             </div>
                         </div>
-                        {{-- Phone --}}
                         <div class="flex items-start space-x-5 group">
                             <div class="w-12 h-12 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-primary transition-all">
                                 <span>📞</span>
@@ -487,8 +473,8 @@
                     </div>
                 </div>
 
-                {{-- Kanan: Form (Glassmorphism) --}}
-                <div class="w-full lg:w-2/3">
+                {{-- Kanan: Form --}}
+                <div class="w-full lg:w-2/3" data-aos="fade-left" data-aos-delay="200">
                     <div class="bg-slate-800/40 backdrop-blur-md p-8 md:p-12 rounded-3xl shadow-xl border border-slate-700/50">
                         <form action="#" method="POST" class="space-y-6">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">

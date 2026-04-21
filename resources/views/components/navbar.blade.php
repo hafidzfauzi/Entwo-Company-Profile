@@ -1,12 +1,12 @@
 {{-- Navbar Alpine.js --}}
-<nav id="navbar" 
-     x-data="{ atTop: true, mobileMenu: false }" 
+<nav id="navbar"
+     x-data="{ atTop: true, mobileMenu: false }"
      @scroll.window="atTop = (window.pageYOffset > 20 ? false : true)"
      :class="{ 'bg-transparent py-6 md:py-8': atTop && !mobileMenu, 'bg-primary/80 backdrop-blur-xl shadow-2xl py-4': !atTop || mobileMenu }"
      class="fixed top-0 left-0 w-full z-[1000] transition-all duration-500 ease-in-out text-white box-border">
-    
+
     <div class="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 flex justify-between items-center">
-        
+
         {{-- Logo --}}
         <a href="/" class="flex items-center space-x-3 md:space-x-4">
             <img src="{{ Vite::asset('resources/images/Logo Entwo.png') }}" alt="Logo" class="h-10 md:h-12 lg:h-14 w-auto transition-transform duration-300 hover:scale-105">
@@ -14,16 +14,19 @@
         </a>
 
         {{-- Desktop Menu --}}
-        <div class="hidden md:flex space-x-8 lg:space-x-12 items-center">
-            <a href="#hero" @click="mobileMenu = false" class="md:text-lg hover:text-secondary transition font-medium">Home</a>
-            <a href="#about" @click="mobileMenu = false" class="md:text-lg hover:text-secondary transition font-medium">About Us</a>
-            <a href="#service" @click="mobileMenu = false" class="md:text-lg hover:text-secondary transition font-medium">Services</a>
-            <a href="#portfolio" @click="mobileMenu = false" class="md:text-lg hover:text-secondary transition font-medium">Portfolio</a>
-            
-            {{-- MENU BARU: Products (Ditambahkan setelah Portfolio) --}}
-            <a href="#products" @click="mobileMenu = false" class="md:text-lg hover:text-secondary transition font-medium">Products</a>
-            
-            <a href="#contact" @click="mobileMenu = false" class="md:text-lg hover:text-secondary transition font-medium">Contact</a>
+        {{-- Tambahkan id="desktop-menu" dan class "relative pb-1" --}}
+        <div id="desktop-menu" class="hidden md:flex space-x-8 lg:space-x-12 items-center relative pb-1">
+
+            {{-- THE SLIDING INDICATOR: Garis yang akan menggeser --}}
+            <div id="nav-indicator" class="absolute bottom-0 left-0 h-[2px] bg-secondary shadow-[0_0_10px_rgba(56,189,248,0.8)] transition-all duration-300 ease-out opacity-0 pointer-events-none rounded-full"></div>
+
+            {{-- HAPUS border-b-2 dan border-transparent pada link desktop ini --}}
+            <a href="#hero" @click="mobileMenu = false" class="nav-link md:text-lg text-slate-300 hover:text-secondary hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.8)] transition-colors font-medium">Home</a>
+            <a href="#about" @click="mobileMenu = false" class="nav-link md:text-lg text-slate-300 hover:text-secondary hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.8)] transition-colors font-medium">About Us</a>
+            <a href="#service" @click="mobileMenu = false" class="nav-link md:text-lg text-slate-300 hover:text-secondary hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.8)] transition-colors font-medium">Services</a>
+            <a href="#portfolio" @click="mobileMenu = false" class="nav-link md:text-lg text-slate-300 hover:text-secondary hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.8)] transition-colors font-medium">Portfolio</a>
+            <a href="#products" @click="mobileMenu = false" class="nav-link md:text-lg text-slate-300 hover:text-secondary hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.8)] transition-colors font-medium">Products</a>
+            <a href="#contact" @click="mobileMenu = false" class="nav-link md:text-lg text-slate-300 hover:text-secondary hover:drop-shadow-[0_0_10px_rgba(56,189,248,0.8)] transition-colors font-medium">Contact</a>
         </div>
 
         {{-- Hamburger Button --}}
@@ -38,7 +41,7 @@
     </div>
 
     {{-- Mobile Menu Overlay --}}
-    <div x-show="mobileMenu" 
+    <div x-show="mobileMenu"
          x-transition:enter="transition ease-out duration-300"
          x-transition:enter-start="opacity-0 -translate-y-10"
          x-transition:enter-end="opacity-100 translate-y-0"
@@ -47,17 +50,14 @@
          x-transition:leave-end="opacity-0 -translate-y-10"
          style="display: none;"
          class="absolute top-full left-0 w-full bg-primary/95 backdrop-blur-xl border-b border-white/10 px-8 py-8 shadow-2xl md:hidden">
-        
+
         <div class="flex flex-col space-y-6">
-            <a href="#hero" @click="mobileMenu = false" class="text-xl font-medium text-slate-300 hover:text-secondary">Home</a>
-            <a href="#about" @click="mobileMenu = false" class="text-xl font-medium text-slate-300 hover:text-secondary">About Us</a>
-            <a href="#service" @click="mobileMenu = false" class="text-xl font-medium text-slate-300 hover:text-secondary">Services</a>
-            <a href="#portfolio" @click="mobileMenu = false" class="text-xl font-medium text-slate-300 hover:text-secondary">Portfolio</a>
-            
-            {{-- MENU BARU: Products untuk Mobile Menu --}}
-            <a href="#products" @click="mobileMenu = false" class="text-xl font-medium text-slate-300 hover:text-secondary">Products</a>
-            
-            <a href="#contact" @click="mobileMenu = false" class="text-xl font-medium text-slate-300 hover:text-secondary">Contact</a>
+            <a href="#hero" @click="mobileMenu = false" class="nav-link text-xl font-medium text-slate-300 border-b-2 border-transparent w-fit hover:text-secondary transition-all">Home</a>
+            <a href="#about" @click="mobileMenu = false" class="nav-link text-xl font-medium text-slate-300 border-b-2 border-transparent w-fit hover:text-secondary transition-all">About Us</a>
+            <a href="#service" @click="mobileMenu = false" class="nav-link text-xl font-medium text-slate-300 border-b-2 border-transparent w-fit hover:text-secondary transition-all">Services</a>
+            <a href="#portfolio" @click="mobileMenu = false" class="nav-link text-xl font-medium text-slate-300 border-b-2 border-transparent w-fit hover:text-secondary transition-all">Portfolio</a>
+            <a href="#products" @click="mobileMenu = false" class="nav-link text-xl font-medium text-slate-300 border-b-2 border-transparent w-fit hover:text-secondary transition-all">Products</a>
+            <a href="#contact" @click="mobileMenu = false" class="nav-link text-xl font-medium text-slate-300 border-b-2 border-transparent w-fit hover:text-secondary transition-all">Contact</a>
         </div>
     </div>
 </nav>
