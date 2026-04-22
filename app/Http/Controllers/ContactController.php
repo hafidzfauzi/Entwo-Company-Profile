@@ -4,14 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use App\Mail\ContactNotification;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Log;
 
 class ContactController extends Controller
 {
     public function store(Request $request)
     {
-        // 1. Honeypot Check (Bot biasanya isi semua input)
+        // 1. Honeypot Check (Anti Bot)
         if ($request->filled('website_url')) {
-            return back()->with('success', 'Message sent!'); // Sukses palsu buat bot
+            return redirect(url()->previous() . '#contact')->with('success', 'Message sent!');
         }
 
         // 2. Validasi
@@ -22,13 +25,20 @@ class ContactController extends Controller
             'message' => 'required|min:10',
         ]);
 
-        // Tambahkan IP Address untuk tracking
         $validated['ip_address'] = $request->ip();
 
-        // 3. Simpan
+        // 3. Simpan ke Supabase
         Contact::create($validated);
 
-        // Redirect kembali dengan membawa ID section contact di URL
+        // 4. Kirim Email Notifikasi
+        try {
+            // Ganti email di bawah ini dengan email kantor/tujuanmu
+            Mail::to('hafidzfauzi021@gmail.com')->send(new ContactNotification($validated));
+        } catch (\Exception $e) {
+            // Jika email gagal dikirim (misal koneksi SMTP error), tetap sukses di database
+            Log::error('Email sending failed: ' . $e->getMessage());
+        }
+
         return redirect(url()->previous() . '#contact')->with('success', 'Pesan Anda berhasil terkirim. Tim ENTWO akan segera menghubungi Anda.');
     }
 }

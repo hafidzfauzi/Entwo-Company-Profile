@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 // Tambahkan ini di bagian atas atau di RouteServiceProvider
 RateLimiter::for('contact-form', function (Request $request) {
-    return Limit::perHour(2)->by($request->ip());
+    return Limit::perMinute(10)->by($request->ip());
 });
 
 Route::view('/', 'pages.home')->name('home');
