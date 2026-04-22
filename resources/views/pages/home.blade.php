@@ -476,30 +476,40 @@
                 {{-- Kanan: Form --}}
                 <div class="w-full lg:w-2/3" data-aos="fade-left" data-aos-delay="200">
                     <div class="bg-slate-800/40 backdrop-blur-md p-8 md:p-12 rounded-3xl shadow-xl border border-slate-700/50">
-                        <form action="#" method="POST" class="space-y-6">
+                        @if(session('success'))
+                            <div class="p-4 mb-4 text-sm text-green-400 bg-slate-800 border border-green-400 rounded-lg">
+                                {{ session('success') }}
+                            </div>
+                        @endif
+
+                        @if(session('error'))
+                            <div class="p-4 mb-4 text-sm text-red-400 bg-slate-800 border border-red-400 rounded-lg">
+                                {{ session('error') }}
+                            </div>
+                        @endif
+
+                        <form action="{{ route('contact.store') }}" method="POST">
+                            @csrf
+
+                            {{-- HONEYPOT: Field ini disembunyikan dari manusia --}}
+                            <input type="text" name="website_url" class="hidden" tabindex="-1" autocomplete="off">
+
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div class="space-y-2">
-                                    <label class="text-sm font-bold text-slate-300 ml-1">Your Name</label>
-                                    <input type="text" name="name" placeholder="Hafidz Fauzi"
-                                        class="w-full px-5 py-4 bg-slate-900/50 border border-slate-700 text-white placeholder-slate-500 rounded-xl focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition">
-                                </div>
-                                <div class="space-y-2">
-                                    <label class="text-sm font-bold text-slate-300 ml-1">Email Address</label>
-                                    <input type="email" name="email" placeholder="hafidz@example.com"
-                                        class="w-full px-5 py-4 bg-slate-900/50 border border-slate-700 text-white placeholder-slate-500 rounded-xl focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition">
-                                </div>
+                                <input type="text" name="name" placeholder="Your Name" required
+                                    class="bg-slate-900 border border-slate-700 text-white rounded-xl px-4 py-3 focus:border-secondary outline-none transition">
+
+                                <input type="email" name="email" placeholder="Your Email" required
+                                    class="bg-slate-900 border border-slate-700 text-white rounded-xl px-4 py-3 focus:border-secondary outline-none transition">
                             </div>
-                            <div class="space-y-2">
-                                <label class="text-sm font-bold text-slate-300 ml-1">Subject</label>
-                                <input type="text" name="subject" placeholder="Project Inquiry"
-                                    class="w-full px-5 py-4 bg-slate-900/50 border border-slate-700 text-white placeholder-slate-500 rounded-xl focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition">
-                            </div>
-                            <div class="space-y-2">
-                                <label class="text-sm font-bold text-slate-300 ml-1">Message</label>
-                                <textarea name="message" rows="5" placeholder="Tell us about your project..."
-                                    class="w-full px-5 py-4 bg-slate-900/50 border border-slate-700 text-white placeholder-slate-500 rounded-xl focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition resize-none"></textarea>
-                            </div>
-                            <button type="submit" class="w-full md:w-fit px-10 py-4 bg-secondary text-primary font-black uppercase tracking-widest rounded-xl hover:bg-white hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all active:scale-95">
+
+                            <input type="text" name="subject" placeholder="Subject"
+                                class="w-full mt-6 bg-slate-900 border border-slate-700 text-white rounded-xl px-4 py-3 focus:border-secondary outline-none transition">
+
+                            <textarea name="message" rows="5" placeholder="Your Message" required
+                                class="w-full mt-6 bg-slate-900 border border-slate-700 text-white rounded-xl px-4 py-3 focus:border-secondary outline-none transition"></textarea>
+
+                            <button type="submit"
+                                class="mt-6 w-full bg-secondary text-primary font-bold py-4 rounded-xl hover:bg-white transition duration-300 uppercase tracking-widest shadow-lg shadow-secondary/20">
                                 Send Message
                             </button>
                         </form>
