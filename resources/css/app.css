@@ -108,8 +108,9 @@
   display: block;
 }
 
-.swiper-pagination-bullet-active
+.swiper-pagination-bullet-active {
     --color-secondary: #38BDF8;
+}
 /* Opsional: Di desktop tetap pakai cover biar nggak terlalu gepeng,
    tapi kalau kamu mau stretch di SEMUA layar, hapus @media ini. */
 @media (min-width: 768px) {
