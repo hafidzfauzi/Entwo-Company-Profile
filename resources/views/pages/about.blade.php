@@ -101,7 +101,7 @@
                             <div class="rounded-2xl overflow-hidden shadow-lg border-2 border-slate-700 h-[250px] mb-6">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.5422634358686!2d109.0215!3d-7.691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDEnMjcuNiJTIDEwOcKwMDEnMTcuNCJF!5e0!3m2!1sen!2sid!4v1713950000000!5m2!1sen!2sid"
-                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" class="grayscale invert opacity-80 hover:opacity-100 transition duration-500">
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" class="w-full h-full rounded-2xl transition duration-500">
                                 </iframe>
                             </div>
 
@@ -132,7 +132,7 @@
                             <div class="rounded-2xl overflow-hidden shadow-lg border-2 border-slate-700 h-[250px] mb-6">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d988.4917204935671!2d109.0613643840234!3d-7.686703050050465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e656d001d5c61ab%3A0x18efe54831170404!2sWORKSHOP%20ENTWO%20GROUP!5e0!3m2!1sid!2sid!4v1777000381817!5m2!1sid!2sid"
-                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" class="grayscale invert opacity-80 hover:opacity-100 transition duration-500">
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" class="w-full h-full rounded-2xl transition duration-500">
                                 </iframe>
                             </div>
 
