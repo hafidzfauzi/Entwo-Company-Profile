@@ -56,69 +56,75 @@
     {{-- ========================================== --}}
     {{-- ABOUT US SECTION --}}
     {{-- ========================================== --}}
-    <section id="about" class="py-24 relative z-10">
+    <section id="about" class="py-16 md:py-24 relative z-10 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center gap-16">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
 
                 {{-- Left Column: Image --}}
-                {{-- AOS: Slide masuk dari Kiri --}}
-                <div class="w-full lg:w-1/2 relative" data-aos="fade-right">
-                    <div class="absolute -top-6 -left-6 w-32 h-32 bg-secondary/20 rounded-full -z-10 animate-pulse blur-2xl"></div>
-                    <div class="absolute -bottom-10 -right-6 w-48 h-48 bg-accent/10 rounded-2xl -z-10 rotate-12 blur-xl"></div>
+                <div class="w-full lg:w-1/2 relative mb-10 lg:mb-0" data-aos="fade-right">
+                    {{-- Decorative Shapes --}}
+                    <div class="absolute -top-6 -left-6 w-24 h-24 md:w-32 md:h-32 bg-secondary/20 rounded-full -z-10 animate-pulse blur-2xl"></div>
+                    <div class="absolute -bottom-10 -right-6 w-32 h-32 md:w-48 md:h-48 bg-accent/10 rounded-2xl -z-10 rotate-12 blur-xl"></div>
 
+                    {{-- Main Image Container --}}
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/50 border-4 border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/img3.png') }}" alt="ENTWO Engineering Excellence" class="w-full h-[500px] object-cover hover:scale-105 transition duration-700 opacity-90 hover:opacity-100">
+                        <img src="{{ Vite::asset('resources/images/img3.png') }}" alt="ENTWO Engineering Excellence"
+                            class="w-full h-[350px] md:h-[500px] object-cover hover:scale-105 transition duration-700 opacity-90 hover:opacity-100">
                     </div>
 
-                    <div class="absolute -bottom-6 -left-6 bg-secondary p-8 rounded-2xl shadow-xl shadow-secondary/20 hidden md:block" data-aos="zoom-in" data-aos-delay="300">
-                        <p class="text-primary text-4xl font-black leading-none">13+</p>
-                        <p class="text-primary/80 text-xs font-bold uppercase tracking-tighter">Years of Service</p>
+                    {{-- Experience Badge (Fixed for Mobile) --}}
+                    {{-- Kita hilangkan 'hidden md:block' dan ganti dengan scaling agar pas di HP --}}
+                    <div class="absolute -bottom-6 -left-4 md:-bottom-6 md:-left-6 bg-secondary p-5 md:p-8 rounded-2xl shadow-xl shadow-secondary/20 scale-90 md:scale-100 origin-left"
+                        data-aos="zoom-in" data-aos-delay="300">
+                        <p class="text-primary text-3xl md:text-4xl font-black leading-none">13+</p>
+                        <p class="text-primary/80 text-[10px] md:text-xs font-bold uppercase tracking-tighter">Years of Service</p>
                     </div>
                 </div>
 
                 {{-- Right Column: Copy --}}
-                {{-- AOS: Slide masuk dari Kanan --}}
-                <div class="w-full lg:w-1/2 space-y-8" data-aos="fade-left" data-aos-delay="100">
+                <div class="w-full lg:w-1/2 space-y-6 md:space-y-8" data-aos="fade-left" data-aos-delay="100">
                     <div class="space-y-4">
-                        <div class="flex items-center space-x-2">
+                        <div class="flex items-center space-x-2 justify-center lg:justify-start">
                             <span class="w-12 h-[2px] bg-secondary"></span>
-                            <h4 class="text-secondary font-bold tracking-[0.2em] uppercase text-xs">Since 2013</h4>
+                            <h4 class="text-secondary font-bold tracking-[0.2em] uppercase text-[10px] md:text-xs">Since 2013</h4>
                         </div>
-                        <h2 class="text-4xl md:text-5xl font-bold text-white leading-tight">
+                        <h2 class="text-3xl md:text-5xl font-bold text-white leading-tight text-center lg:text-left">
                             Right at the heart of <span class="text-secondary underline decoration-secondary/30 underline-offset-8">Innovation</span>
                         </h2>
                     </div>
 
                     <div class="space-y-6">
-                        <p class="text-slate-300 leading-relaxed text-lg italic border-l-4 border-secondary pl-6 bg-slate-800/30 p-4 rounded-r-xl">
+                        <p class="text-slate-300 leading-relaxed text-base md:text-lg italic border-l-4 border-secondary pl-4 md:pl-6 bg-slate-800/30 p-4 rounded-r-xl">
                             "Embrace the future with ENTWO, where solutions meet excellence."
                         </p>
-                        <p class="text-slate-400 leading-relaxed">
+                        <p class="text-slate-400 leading-relaxed text-sm md:text-base text-center lg:text-left">
                             CV ENTWO Electronic & Engineering has been a pioneer in the general contracting, supply, automation and maintenance industry since its founding in 2013. Based in Cilacap, Central Java, Indonesia, we have set new standards in providing reliable high-quality solutions to various industries.
                         </p>
                     </div>
 
-                    <div class="grid grid-cols-2 gap-6 pt-4">
+                    {{-- Features Grid --}}
+                    <div class="grid grid-cols-2 gap-4 md:gap-6 pt-4">
                         <div class="group bg-slate-800/40 p-4 rounded-xl border border-slate-700/50 backdrop-blur-sm" data-aos="fade-up" data-aos-delay="300">
                             <div class="flex items-center space-x-3 mb-2">
-                                <span class="text-secondary group-hover:scale-125 transition">⚡</span>
-                                <h5 class="font-bold text-white">Automation</h5>
+                                <span class="text-lg md:text-xl group-hover:scale-125 transition">⚡</span>
+                                <h5 class="font-bold text-white text-sm md:text-base">Automation</h5>
                             </div>
-                            <p class="text-xs text-slate-400">Industry-leading technical expertise.</p>
+                            <p class="text-[10px] md:text-xs text-slate-400">Industry-leading technical expertise.</p>
                         </div>
                         <div class="group bg-slate-800/40 p-4 rounded-xl border border-slate-700/50 backdrop-blur-sm" data-aos="fade-up" data-aos-delay="400">
                             <div class="flex items-center space-x-3 mb-2">
-                                <span class="text-secondary group-hover:scale-125 transition">🛠️</span>
-                                <h5 class="font-bold text-white">Maintenance</h5>
+                                <span class="text-lg md:text-xl group-hover:scale-125 transition">🛠️</span>
+                                <h5 class="font-bold text-white text-sm md:text-base">Maintenance</h5>
                             </div>
-                            <p class="text-xs text-slate-400">Dedicated to delivering the best.</p>
+                            <p class="text-[10px] md:text-xs text-slate-400">Dedicated to delivering the best.</p>
                         </div>
                     </div>
 
-                    <div class="pt-6" data-aos="fade-up" data-aos-delay="500">
-                        <a href="/about" class="px-8 py-4 bg-secondary text-primary font-bold rounded-xl hover:bg-white hover:shadow-lg hover:shadow-white/10 transition-all flex items-center w-fit space-x-3 group">
+                    {{-- Button --}}
+                    <div class="pt-6 flex justify-center lg:justify-start" data-aos="fade-up" data-aos-delay="500">
+                        <a href="/about" class="px-6 py-3 md:px-8 md:py-4 bg-secondary text-primary font-bold rounded-xl hover:bg-white hover:shadow-lg hover:shadow-white/10 transition-all flex items-center w-fit space-x-3 group text-sm md:text-base">
                             <span>Learn More About Us</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 group-hover:translate-x-2 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-2 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                             </svg>
                         </a>

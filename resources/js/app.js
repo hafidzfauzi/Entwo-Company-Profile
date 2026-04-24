@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         once: false,        // PENTING: Ubah ke false agar animasi berulang tiap scroll!
         mirror: true,       // Animasi juga jalan saat discroll ke atas (kembali)
         offset: 50,       // Jarak elemen dari bawah layar sebelum animasi mulai
+        startEvent: 'DOMContentLoaded', // Event yang memicu inisialisasi AOS
     });
 
     // 2. Logic Smooth Scroll ke ID (Vanilla JS)
