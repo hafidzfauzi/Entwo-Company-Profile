@@ -5,7 +5,7 @@
      :class="{ 'bg-transparent py-6 md:py-8': atTop && !mobileMenu, 'bg-primary/80 backdrop-blur-xl shadow-2xl py-4': !atTop || mobileMenu }"
      class="fixed top-0 left-0 w-full z-[1000] transition-all duration-500 ease-in-out text-white box-border">
 
-    <div class="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 flex justify-between items-center">
+    <div class="max-w-[1440px] mx-auto py-3 px-6 md:px-12 md:py-4 lg:px-16 flex justify-between items-center">
 
         {{-- Logo --}}
         <a href="/" class="flex items-center space-x-3 md:space-x-4">
