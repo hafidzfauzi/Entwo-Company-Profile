@@ -87,8 +87,7 @@
     }
 }
 
-/* --- Logic Stretch Background (Swiper) --- */
-/* Taruh di sini agar me-override default style dari library Swiper */
+/* --- Logic Background (Swiper) --- */
 
 .hero-swiper .swiper-wrapper {
   @apply h-full w-full;
@@ -101,20 +100,23 @@
 .hero-swiper .swiper-slide img {
   width: 100% !important;
   height: 100% !important;
-  /* Gunakan object-fill agar gambar 'ditarik' paksa mengikuti
-     lebar dan tinggi layar (efek stretch).
+  /* Ganti 'fill' menjadi 'cover' agar gambar proporsional (tidak gepeng).
+     'object-position: center' memastikan bagian tengah gambar (inti logo/foto) tetap kelihatan.
   */
-  object-fit: fill !important;
+  object-fit: cover !important;
+  object-position: center !important;
   display: block;
 }
 
-.swiper-pagination-bullet-active {
-    --color-secondary: #38BDF8;
-}
-/* Opsional: Di desktop tetap pakai cover biar nggak terlalu gepeng,
-   tapi kalau kamu mau stretch di SEMUA layar, hapus @media ini. */
-@media (min-width: 768px) {
+/* Khusus untuk gambar logo yang sifatnya 'landscape' (seperti logo entwo group),
+   kita bisa kasih sedikit penyesuaian di mobile agar tidak terlalu nge-zoom.
+*/
+@media (max-width: 767px) {
   .hero-swiper .swiper-slide img {
+    /* Kalau kamu merasa gambarnya terlalu nge-zoom di mobile,
+       bisa coba pakai 'contain' tapi nanti akan ada background hitam di atas-bawah.
+       Rekomendasi terbaik tetap 'cover'.
+    */
     object-fit: cover !important;
   }
 }

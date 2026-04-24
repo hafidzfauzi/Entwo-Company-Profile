@@ -23,11 +23,15 @@
                 </div>
                 <div class="swiper-slide relative h-full w-full">
                     <div class="absolute inset-0 bg-primary/70 z-10"></div>
-                    <img src="{{ Vite::asset('resources/images/Logo Entwo.png') }}" alt="Entwo Group" class="w-full h-full object-cover block">
+                    <img src="{{ Vite::asset('resources/images/pltucilacap.jpg') }}" alt="Entwo Group" class="w-full h-full object-cover block">
                 </div>
                 <div class="swiper-slide relative h-full w-full">
                     <div class="absolute inset-0 bg-primary/70 z-10"></div>
                     <img src="{{ Vite::asset('resources/images/img2.jpeg') }}" alt="Entwo Group" class="w-full h-full object-cover block">
+                </div>
+                <div class="swiper-slide relative h-full w-full">
+                    <div class="absolute inset-0 bg-primary/70 z-10"></div>
+                    <img src="{{ Vite::asset('resources/images/cover.png') }}" alt="Entwo Group" class="w-full h-full object-cover block">
                 </div>
             </div>
             <div class="swiper-pagination"></div>
