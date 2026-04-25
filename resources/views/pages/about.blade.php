@@ -59,13 +59,13 @@
                     <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
                         {{-- Image Grid ala PDF --}}
                         <div class="rounded-2xl overflow-hidden h-40 border border-white/10">
-                            <img src="{{ Vite::asset('resources/images/img2.jpeg') }}" class="w-full h-full object-cover">
+                            <img src="{{ asset('images/img2.jpeg') }}" class="w-full h-full object-cover">
                         </div>
                         <div class="rounded-2xl overflow-hidden h-40 border border-white/10">
-                            <img src="{{ Vite::asset('resources/images/img3.png') }}" class="w-full h-full object-cover">
+                            <img src="{{ asset('images/img3.png') }}" class="w-full h-full object-cover">
                         </div>
                         <div class="rounded-2xl overflow-hidden h-60 col-span-2 border border-white/10">
-                            <img src="{{ Vite::asset('resources/images/colase2.png') }}" class="w-full h-full object-cover">
+                            <img src="{{ asset('images/colase2.png') }}" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                             <div class="flex items-center gap-6 p-4 bg-white/5 rounded-2xl border border-dashed border-white/20">
                                 <div class="w-20 h-20 bg-white p-1.5 rounded-lg flex-shrink-0">
                                     {{-- Ganti dengan path file image QR Code aslimu --}}
-                                    <img src="{{ Vite::asset('resources/images/QRJuanda.png') }}" alt="QR Office" class="w-full h-full">
+                                    <img src="{{ asset('images/QRJuanda.png') }}" alt="QR Office" class="w-full h-full">
                                 </div>
                                 <div>
                                     <p class="text-[10px] text-slate-500 font-mono uppercase tracking-[0.2em] mb-1">Scan for Location</p>
@@ -140,7 +140,7 @@
                             <div class="flex items-center gap-6 p-4 bg-white/5 rounded-2xl border border-dashed border-white/20">
                                 <div class="w-20 h-20 bg-white p-1.5 rounded-lg flex-shrink-0">
                                     {{-- Ganti dengan path file image QR Code aslimu --}}
-                                    <img src="{{ Vite::asset('resources/images/QRLengkong.png') }}" alt="QR Workshop" class="w-full h-full">
+                                    <img src="{{ asset('images/QRLengkong.png') }}" alt="QR Workshop" class="w-full h-full">
                                 </div>
                                 <div>
                                     <p class="text-[10px] text-slate-500 font-mono uppercase tracking-[0.2em] mb-1">Scan for Location</p>

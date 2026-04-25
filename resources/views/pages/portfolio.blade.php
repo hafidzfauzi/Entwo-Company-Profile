@@ -43,7 +43,7 @@
 
                 <div x-show="page === 1" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-video bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectPerpus.png') }}" alt="Perpustakaan Cilacap" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
+                        <img src="{{ asset('images/projectPerpus.png') }}" alt="Perpustakaan Cilacap" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
@@ -57,7 +57,7 @@
 
                 <div x-show="page === 1" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-video bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectSpray.png') }}" alt="Spray Taman" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
+                        <img src="{{ asset('images/projectSpray.png') }}" alt="Spray Taman" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
@@ -71,7 +71,7 @@
 
                 <div x-show="page === 1" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-video bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectWeighbridge.png') }}" alt="Calibration" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
+                        <img src="{{ asset('images/projectWeighbridge.png') }}" alt="Calibration" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
@@ -85,7 +85,7 @@
 
                 <div x-show="page === 1" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-video bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectFO.png') }}" alt="FO Jetty" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
+                        <img src="{{ asset('images/projectFO.png') }}" alt="FO Jetty" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
@@ -99,7 +99,7 @@
 
                 <div x-show="page === 1" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-video bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectDamkar.png') }}" alt="Damkar" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
+                        <img src="{{ asset('images/projectDamkar.png') }}" alt="Damkar" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
@@ -113,7 +113,7 @@
 
                 <div x-show="page === 1" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-video bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectFaceDetection.png') }}" alt="Face Detection" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
+                        <img src="{{ asset('images/projectFaceDetection.png') }}" alt="Face Detection" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
@@ -131,7 +131,7 @@
 
                 <div x-show="page === 2" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-video bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectPortal.png') }}" alt="Portal Installation" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
+                        <img src="{{ asset('images/projectPortal.png') }}" alt="Portal Installation" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
@@ -145,7 +145,7 @@
 
                 <div x-show="page === 2" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-video bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectHSE.png') }}" alt="HSE Performance" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
+                        <img src="{{ asset('images/projectHSE.png') }}" alt="HSE Performance" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
@@ -159,7 +159,7 @@
 
                 <div x-show="page === 2" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-video bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectK3Reporter.png') }}" alt="K3 Reporter" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
+                        <img src="{{ asset('images/projectK3Reporter.png') }}" alt="K3 Reporter" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
@@ -173,7 +173,7 @@
 
                 <div x-show="page === 2" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-video bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectLicense.png') }}" alt="Operator License" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
+                        <img src="{{ asset('images/projectLicense.png') }}" alt="Operator License" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
@@ -187,7 +187,7 @@
 
                 <div x-show="page === 2" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-video bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectCoal.png') }}" alt="Coal Monitoring" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
+                        <img src="{{ asset('images/projectCoal.png') }}" alt="Coal Monitoring" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
@@ -201,7 +201,7 @@
 
                 <div x-show="page === 2" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-video bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectShipUnloader.png') }}" alt="CCTV Ship Unloader" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
+                        <img src="{{ asset('images/projectShipUnloader.png') }}" alt="CCTV Ship Unloader" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
@@ -219,7 +219,7 @@
 
                 <div x-show="page === 3" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-video bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectEBS.png') }}" alt="EBS Transfer" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
+                        <img src="{{ asset('images/projectEBS.png') }}" alt="EBS Transfer" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
@@ -233,7 +233,7 @@
 
                 <div x-show="page === 3" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-video bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectPerizinan.png') }}" alt="Software Perizinan" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
+                        <img src="{{ asset('images/projectPerizinan.png') }}" alt="Software Perizinan" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
@@ -247,7 +247,7 @@
 
                 <div x-show="page === 3" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-video bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectWallDisplay.png') }}" alt="Wall Display" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
+                        <img src="{{ asset('images/projectWallDisplay.png') }}" alt="Wall Display" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
@@ -261,7 +261,7 @@
 
                 <div x-show="page === 3" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-video bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectCondensor.png') }}" alt="Condensor CCTV" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
+                        <img src="{{ asset('images/projectCondensor.png') }}" alt="Condensor CCTV" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
@@ -275,7 +275,7 @@
 
                 <div x-show="page === 3" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-video bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectSolarCell.png') }}" alt="Solar Cell" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
+                        <img src="{{ asset('images/projectSolarCell.png') }}" alt="Solar Cell" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
@@ -289,7 +289,7 @@
 
                 <div x-show="page === 3" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-video bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectAbsen.png') }}" alt="Absensi Online" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
+                        <img src="{{ asset('images/projectAbsen.png') }}" alt="Absensi Online" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
@@ -307,7 +307,7 @@
 
                 <div x-show="page === 4" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 transition-all duration-300">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-video bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectPIMS.png') }}" alt="PIMS OSISOFT" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
+                        <img src="{{ asset('images/projectPIMS.png') }}" alt="PIMS OSISOFT" class="w-full h-full object-cover transition duration-500 md:group-hover:scale-110">
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">

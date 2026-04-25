@@ -19,19 +19,19 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide relative h-full w-full">
                     <div class="absolute inset-0 bg-primary/70 z-10"></div>
-                    <img src="{{ Vite::asset('resources/images/logo entwo group.png') }}" alt="Entwo Group" class="w-full h-full object-cover block">
+                    <img src="{{ asset('images/logo entwo group.png') }}" alt="Entwo Group" class="w-full h-full object-cover block">
                 </div>
                 <div class="swiper-slide relative h-full w-full">
                     <div class="absolute inset-0 bg-primary/70 z-10"></div>
-                    <img src="{{ Vite::asset('resources/images/pltucilacap.jpg') }}" alt="Entwo Group" class="w-full h-full object-cover block">
+                    <img src="{{ asset('images/pltucilacap.jpg') }}" alt="Entwo Group" class="w-full h-full object-cover block">
                 </div>
                 <div class="swiper-slide relative h-full w-full">
                     <div class="absolute inset-0 bg-primary/70 z-10"></div>
-                    <img src="{{ Vite::asset('resources/images/img2.jpeg') }}" alt="Entwo Group" class="w-full h-full object-cover block">
+                    <img src="{{ asset('images/img2.jpeg') }}" alt="Entwo Group" class="w-full h-full object-cover block">
                 </div>
                 <div class="swiper-slide relative h-full w-full">
                     <div class="absolute inset-0 bg-primary/70 z-10"></div>
-                    <img src="{{ Vite::asset('resources/images/cover.png') }}" alt="Entwo Group" class="w-full h-full object-cover block">
+                    <img src="{{ asset('images/cover.png') }}" alt="Entwo Group" class="w-full h-full object-cover block">
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -68,7 +68,7 @@
 
                     {{-- Main Image Container --}}
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/50 border-4 border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/img3.png') }}" alt="ENTWO Engineering Excellence"
+                        <img src="{{ asset('images/img3.png') }}" alt="ENTWO Engineering Excellence"
                             class="w-full h-[350px] md:h-[500px] object-cover hover:scale-105 transition duration-700 opacity-90 hover:opacity-100">
                     </div>
 
@@ -244,46 +244,46 @@
             <div class="animate-marquee flex items-center opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
                 <div class="flex items-center gap-16 md:gap-24 px-8 md:px-12">
                     <div class="flex items-center space-x-4 whitespace-nowrap">
-                        <img src="{{ Vite::asset('resources/images/PT. SUMBER SEGARA PRIMADAYA (S2P).ico') }}" alt="S2P" class="h-10 md:h-12 w-auto object-contain">
+                        <img src="{{ asset('images/PT. SUMBER SEGARA PRIMADAYA (S2P).ico') }}" alt="S2P" class="h-10 md:h-12 w-auto object-contain">
                         <span class="font-bold text-lg md:text-xl text-slate-300">PT. SUMBER SEGARA PRIMADAYA</span>
                     </div>
                     <div class="flex items-center space-x-4 whitespace-nowrap">
-                        <img src="{{ Vite::asset('resources/images/PT D&C ENGINEERING COMPANY.ico') }}" alt="D&C" class="h-10 md:h-12 w-auto object-contain">
+                        <img src="{{ asset('images/PT D&C ENGINEERING COMPANY.ico') }}" alt="D&C" class="h-10 md:h-12 w-auto object-contain">
                         <span class="font-bold text-lg md:text-xl text-slate-300">PT. D&C ENGINEERING COMPANY</span>
                     </div>
                     <div class="flex items-center space-x-4 whitespace-nowrap">
-                        <img src="{{ Vite::asset('resources/images/PT. GADING MAS UTAMA.ico') }}" alt="Gading Mas" class="h-10 md:h-12 w-auto object-contain">
+                        <img src="{{ asset('images/PT. GADING MAS UTAMA.ico') }}" alt="Gading Mas" class="h-10 md:h-12 w-auto object-contain">
                         <span class="font-bold text-lg md:text-xl text-slate-300">PT. GADING MAS UTAMA</span>
                     </div>
                     <div class="flex items-center space-x-4 whitespace-nowrap">
-                        <img src="{{ Vite::asset('resources/images/PT. TRIA DAYATAMA POWER SOLUSINDO.ico') }}" alt="Tria Dayatama" class="h-10 md:h-12 w-auto object-contain">
+                        <img src="{{ asset('images/PT. TRIA DAYATAMA POWER SOLUSINDO.ico') }}" alt="Tria Dayatama" class="h-10 md:h-12 w-auto object-contain">
                         <span class="font-bold text-lg md:text-xl text-slate-300">PT. TRIA DAYATAMA POWER SOLUSINDO</span>
                     </div>
                     <div class="flex items-center space-x-4 whitespace-nowrap">
-                        <img src="{{ Vite::asset('resources/images/BUT CHINA NATIONAL CHEMICAL ENGINEERING CO., LTD (BUT. CNCEC).ico') }}" alt="CNCEC" class="h-10 md:h-12 w-auto object-contain">
+                        <img src="{{ asset('images/BUT CHINA NATIONAL CHEMICAL ENGINEERING CO., LTD (BUT. CNCEC).ico') }}" alt="CNCEC" class="h-10 md:h-12 w-auto object-contain">
                         <span class="font-bold text-lg md:text-xl text-slate-300">BUT. CNCEC</span>
                     </div>
                 </div>
 
                 <div class="flex items-center gap-16 md:gap-24 px-8 md:px-12" aria-hidden="true">
                     <div class="flex items-center space-x-4 whitespace-nowrap">
-                        <img src="{{ Vite::asset('resources/images/PT. SUMBER SEGARA PRIMADAYA (S2P).ico') }}" alt="S2P" class="h-10 md:h-12 w-auto object-contain">
+                        <img src="{{ asset('images/PT. SUMBER SEGARA PRIMADAYA (S2P).ico') }}" alt="S2P" class="h-10 md:h-12 w-auto object-contain">
                         <span class="font-bold text-lg md:text-xl text-slate-300">PT. SUMBER SEGARA PRIMADAYA</span>
                     </div>
                     <div class="flex items-center space-x-4 whitespace-nowrap">
-                        <img src="{{ Vite::asset('resources/images/PT D&C ENGINEERING COMPANY.ico') }}" alt="D&C" class="h-10 md:h-12 w-auto object-contain">
+                        <img src="{{ asset('images/PT D&C ENGINEERING COMPANY.ico') }}" alt="D&C" class="h-10 md:h-12 w-auto object-contain">
                         <span class="font-bold text-lg md:text-xl text-slate-300">PT. D&C ENGINEERING COMPANY</span>
                     </div>
                     <div class="flex items-center space-x-4 whitespace-nowrap">
-                        <img src="{{ Vite::asset('resources/images/PT. GADING MAS UTAMA.ico') }}" alt="Gading Mas" class="h-10 md:h-12 w-auto object-contain">
+                        <img src="{{ asset('images/PT. GADING MAS UTAMA.ico') }}" alt="Gading Mas" class="h-10 md:h-12 w-auto object-contain">
                         <span class="font-bold text-lg md:text-xl text-slate-300">PT. GADING MAS UTAMA</span>
                     </div>
                     <div class="flex items-center space-x-4 whitespace-nowrap">
-                        <img src="{{ Vite::asset('resources/images/PT. TRIA DAYATAMA POWER SOLUSINDO.ico') }}" alt="Tria Dayatama" class="h-10 md:h-12 w-auto object-contain">
+                        <img src="{{ asset('images/PT. TRIA DAYATAMA POWER SOLUSINDO.ico') }}" alt="Tria Dayatama" class="h-10 md:h-12 w-auto object-contain">
                         <span class="font-bold text-lg md:text-xl text-slate-300">PT. TRIA DAYATAMA POWER SOLUSINDO</span>
                     </div>
                     <div class="flex items-center space-x-4 whitespace-nowrap">
-                        <img src="{{ Vite::asset('resources/images/BUT CHINA NATIONAL CHEMICAL ENGINEERING CO., LTD (BUT. CNCEC).ico') }}" alt="CNCEC" class="h-10 md:h-12 w-auto object-contain">
+                        <img src="{{ asset('images/BUT CHINA NATIONAL CHEMICAL ENGINEERING CO., LTD (BUT. CNCEC).ico') }}" alt="CNCEC" class="h-10 md:h-12 w-auto object-contain">
                         <span class="font-bold text-lg md:text-xl text-slate-300">BUT. CNCEC</span>
                     </div>
                 </div>
@@ -312,7 +312,7 @@
 
                 <div data-aos="fade-up" data-aos-delay="100" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 hover:shadow-secondary/10 transition-all duration-500">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-[4/3] bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectPIMS.png') }}" class="w-full h-full object-cover transition duration-700 md:group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                        <img src="{{ asset('images/projectPIMS.png') }}" class="w-full h-full object-cover transition duration-700 md:group-hover:scale-110 opacity-90 group-hover:opacity-100">
                         <div class="absolute inset-0 bg-primary/40 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center"></div>
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
@@ -331,7 +331,7 @@
 
                 <div data-aos="fade-up" data-aos-delay="200" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 hover:shadow-secondary/10 transition-all duration-500">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-[4/3] bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectAbsen.png') }}" class="w-full h-full object-cover transition duration-700 md:group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                        <img src="{{ asset('images/projectAbsen.png') }}" class="w-full h-full object-cover transition duration-700 md:group-hover:scale-110 opacity-90 group-hover:opacity-100">
                         <div class="absolute inset-0 bg-primary/40 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center"></div>
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
@@ -350,7 +350,7 @@
 
                 <div data-aos="fade-up" data-aos-delay="300" class="group flex flex-col bg-slate-800/40 backdrop-blur-md rounded-[2.5rem] p-4 border border-slate-700/50 shadow-xl hover:border-secondary/50 hover:shadow-secondary/10 transition-all duration-500">
                     <div class="relative overflow-hidden rounded-[2rem] aspect-[4/3] bg-slate-900 border border-slate-800">
-                        <img src="{{ Vite::asset('resources/images/projectCondensor.png') }}" class="w-full h-full object-cover transition duration-700 md:group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                        <img src="{{ asset('images/projectCondensor.png') }}" class="w-full h-full object-cover transition duration-700 md:group-hover:scale-110 opacity-90 group-hover:opacity-100">
                         <div class="absolute inset-0 bg-primary/40 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center"></div>
                     </div>
                     <div class="mt-6 px-4 pb-4 flex flex-col flex-grow">
@@ -419,7 +419,7 @@
                             </div>
                         </div>
                         <div class="w-full lg:w-1/2 p-8 bg-gradient-to-br from-secondary/10 to-transparent">
-                            <img src="{{ Vite::asset('resources/images/SheGuard.png') }}" alt="SHEguard Dashboard" class="rounded-xl border border-slate-700 shadow-2xl transform group-hover:scale-105 transition duration-500">
+                            <img src="{{ asset('images/SheGuard.png') }}" alt="SHEguard Dashboard" class="rounded-xl border border-slate-700 shadow-2xl transform group-hover:scale-105 transition duration-500">
                         </div>
                     </div>
                 </div>
@@ -454,7 +454,7 @@
                             </div>
                         </div>
                         <div class="w-full lg:w-1/2 p-8 bg-gradient-to-bl from-secondary/10 to-transparent">
-                            <img src="{{ Vite::asset('resources/images/augmeeid.png') }}" alt="AUGMEE AR Visualization" class="rounded-xl border border-slate-700 shadow-2xl transform group-hover:scale-105 transition duration-500">
+                            <img src="{{ asset('images/augmeeid.png') }}" alt="AUGMEE AR Visualization" class="rounded-xl border border-slate-700 shadow-2xl transform group-hover:scale-105 transition duration-500">
                         </div>
                     </div>
                 </div>
