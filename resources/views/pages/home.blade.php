@@ -102,22 +102,51 @@
                         </p>
                     </div>
 
-                    {{-- Features Grid --}}
-                    <div class="grid grid-cols-2 gap-4 md:gap-6 pt-4">
-                        <div class="group bg-slate-800/40 p-4 rounded-xl border border-slate-700/50 backdrop-blur-sm" data-aos="fade-up" data-aos-delay="300">
-                            <div class="flex items-center space-x-3 mb-2">
-                                <span class="text-lg md:text-xl group-hover:scale-125 transition">⚡</span>
-                                <h5 class="font-bold text-white text-sm md:text-base">Automation</h5>
+                    {{-- Features Grid (Staggered Animation) --}}
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 pt-6">
+
+                        {{-- Feature 1: Automation --}}
+                        <div data-aos="fade-up" data-aos-delay="100"
+                            class="group bg-slate-800/40 p-5 rounded-2xl border border-slate-700/50 backdrop-blur-sm transition-all duration-500 hover:border-secondary/50 hover:shadow-lg hover:shadow-secondary/5 hover:-translate-y-1">
+                            <div class="flex items-center space-x-3 mb-3">
+                                <div class="w-10 h-10 bg-slate-900/50 rounded-lg flex items-center justify-center group-hover:bg-secondary/20 transition-colors duration-500">
+                                    <span class="text-xl group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">⚡</span>
+                                </div>
+                                <h5 class="font-bold text-white text-sm md:text-base group-hover:text-secondary transition-colors">Automation</h5>
                             </div>
-                            <p class="text-[10px] md:text-xs text-slate-400">Industry-leading technical expertise.</p>
+                            <p class="text-[11px] md:text-xs text-slate-400 leading-relaxed">
+                                Industry-leading technical automation expertise to optimize your workflow.
+                            </p>
                         </div>
-                        <div class="group bg-slate-800/40 p-4 rounded-xl border border-slate-700/50 backdrop-blur-sm" data-aos="fade-up" data-aos-delay="400">
-                            <div class="flex items-center space-x-3 mb-2">
-                                <span class="text-lg md:text-xl group-hover:scale-125 transition">🛠️</span>
-                                <h5 class="font-bold text-white text-sm md:text-base">Maintenance</h5>
+
+                        {{-- Feature 2: Maintenance --}}
+                        <div data-aos="fade-up" data-aos-delay="200"
+                            class="group bg-slate-800/40 p-5 rounded-2xl border border-slate-700/50 backdrop-blur-sm transition-all duration-500 hover:border-secondary/50 hover:shadow-lg hover:shadow-secondary/5 hover:-translate-y-1">
+                            <div class="flex items-center space-x-3 mb-3">
+                                <div class="w-10 h-10 bg-slate-900/50 rounded-lg flex items-center justify-center group-hover:bg-secondary/20 transition-colors duration-500">
+                                    <span class="text-xl group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">🛠️</span>
+                                </div>
+                                <h5 class="font-bold text-white text-sm md:text-base group-hover:text-secondary transition-colors">Maintenance</h5>
                             </div>
-                            <p class="text-[10px] md:text-xs text-slate-400">Dedicated to delivering the best.</p>
+                            <p class="text-[11px] md:text-xs text-slate-400 leading-relaxed">
+                                Dedicated support ensuring reliable and continuous system operations.
+                            </p>
                         </div>
+
+                        {{-- Feature 3: Software --}}
+                        <div data-aos="fade-up" data-aos-delay="300"
+                            class="group bg-slate-800/40 p-5 rounded-2xl border border-slate-700/50 backdrop-blur-sm transition-all duration-500 hover:border-secondary/50 hover:shadow-lg hover:shadow-secondary/5 hover:-translate-y-1 sm:col-span-2 lg:col-span-1">
+                            <div class="flex items-center space-x-3 mb-3">
+                                <div class="w-10 h-10 bg-slate-900/50 rounded-lg flex items-center justify-center group-hover:bg-secondary/20 transition-colors duration-500">
+                                    <span class="text-xl group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">💻</span>
+                                </div>
+                                <h5 class="font-bold text-white text-sm md:text-base group-hover:text-secondary transition-colors">Software</h5>
+                            </div>
+                            <p class="text-[11px] md:text-xs text-slate-400 leading-relaxed">
+                                Custom digital solutions specifically built for modern industrial needs.
+                            </p>
+                        </div>
+
                     </div>
 
                     {{-- Button --}}
