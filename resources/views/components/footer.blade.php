@@ -10,7 +10,7 @@
             {{-- Kolom 1: Branding --}}
             <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
                <a href="/" class="flex items-center space-x-3">
-                    <img src="{{ Vite::asset('resources/images/Logo Entwo.png') }}" alt="Entwo Logo" class="h-10 md:h-12 w-auto">
+                    <img src="{{ asset('images/Logo Entwo.png') }}" alt="Entwo Logo" class="h-10 md:h-12 w-auto">
                     <span class="text-2xl md:text-3xl font-black tracking-wider uppercase italic">ENTWO</span>
                 </a>
                 <p class="text-slate-400 text-sm leading-relaxed">

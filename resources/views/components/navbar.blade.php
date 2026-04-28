@@ -9,7 +9,7 @@
 
         {{-- Logo --}}
         <a href="/" class="flex items-center space-x-3 md:space-x-4">
-            <img src="{{ Vite::asset('resources/images/Logo Entwo.png') }}" alt="Logo" class="h-10 md:h-12 lg:h-14 w-auto transition-transform duration-300 hover:scale-105">
+            <img src="{{ asset('images/Logo Entwo.png') }}" alt="Logo" class="h-10 md:h-12 lg:h-14 w-auto transition-transform duration-300 hover:scale-105">
             <span class="text-2xl md:text-3xl font-black tracking-wider">ENTWO</span>
         </a>
 
