@@ -10,12 +10,12 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
-    server: {
-        host: '172.22.17.92', // Samakan dengan host Laravel
-        port: 5173,
-        strictPort: true,
-        hmr: {
-            host: '172.22.17.92',
-        },
-    },
+    // server: {
+    //     host: '172.22.17.92', // Samakan dengan host Laravel
+    //     port: 5173,
+    //     strictPort: true,
+    //     hmr: {
+    //         host: '172.22.17.92',
+    //     },
+    // },
 });
