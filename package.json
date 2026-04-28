@@ -13,6 +13,8 @@
         "vite": "^8.0.0"
     },
     "dependencies": {
+        "@emnapi/core": "^1.10.0",
+        "@emnapi/runtime": "^1.10.0",
         "@tailwindcss/vite": "^4.2.2",
         "aos": "^2.3.4",
         "swiper": "^12.1.3",
