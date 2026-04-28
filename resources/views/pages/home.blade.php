@@ -454,7 +454,7 @@
                             </div>
                         </div>
                         <div class="w-full lg:w-1/2 p-8 bg-gradient-to-bl from-secondary/10 to-transparent">
-                            <img src="{{ asset('images/augmeeid.png') }}" alt="AUGMEE AR Visualization" class="rounded-xl border border-slate-700 shadow-2xl transform group-hover:scale-105 transition duration-500">
+                            <img src="{{ asset('images/Augmeeid.png') }}" alt="AUGMEE AR Visualization" class="rounded-xl border border-slate-700 shadow-2xl transform group-hover:scale-105 transition duration-500">
                         </div>
                     </div>
                 </div>
